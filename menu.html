@@ -9,13 +9,43 @@
 </head>
 <body class= "menu" data-spy="scroll" data-target="Items">
   
-   <div class="topnav">
+  <div class="navbar navbar-inverse">
+  <div class = "navbar-header">
+      <a class="navbar-brand-image"> <img class="logo" src="http://static1.squarespace.com/static/50230bbd84ae28a62a536a29/t/522e8eece4b048babe08ffde/1412192567146/?format=750w"></a>
+  </div>
+  <ul class="nav navbar-nav">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="Dropdown"> 
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a id="Items" href="#pizza">Pizza Items</a></li>
+    <li><a id="Items" href="#side">Side Items</a></li>
+     <li><a id="Items" href="#pasta">Pasta Items</a></li>
+    <li><a id="Items" href="#dessert">Dessert Items</a></li>
+    <!--<li role="separator" class="divider"></li>-->
+    <li><a id="Items" href="#drink">Drink Items</a></li>
+  </ul>
+   
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="event.html">Event</a></li>
+    <li><a href="contact.html">Contact</a></li>
+      </ul>
+  <ul class="nav navbar-nav editUL">
+    <li class="left"><a data-toggle="modal" data-target="#myModal">Sign Up</a></li>
+    <li class="left"><a data-toggle="modal" data-target="#myModal2">Login</a></li>
+    </ul>
+  </div>
+</div>
+
+ <!-- Done with Dropdown-->
+ <!--  <div class="topnav">
   <a href= "home.html">Home</a>
   <a href="about.html">About</a>
    <a href="gallery.html">Gallery</a>
   <a href="contact.html">Contact</a>
-  <!--<a class="active" href="menu.html">Menu</a>-->
-  <div class="dropdown">
+  <a class="active" href="menu.html">Menu</a>-->
+ <!--<div class="dropdown">
   <button class="menu-dropdown dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     Menu
     <span class="caret"></span>
@@ -24,217 +54,63 @@
   
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
     <li><a id="Items" href="#">Pizza Items</a></li>
-    <li><a id="Items" href="#">Sides</a></li>
-    <li><a id="Items" href="#">Dessert</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a id="Items" href="#">Drinks</a></li>
+    <li><a id="Items" href="#">Side Items</a></li>
+     <li><a id="Items" href="#">Pasta Items</a></li>
+    <li><a id="Items" href="#">Dessert Items</a></li>
+    <!--<li role="separator" class="divider"></li>
+    <li><a id="Items" href="#">Drink Items</a></li>
   </ul>
-</div>
+</div>-->
 
 </div>
   <section>
-      <div class="container">
+      <div class="container-fluid">
         <h2 id= "pizza"> Michael's Pizzeria </h2>
-            <div class="well well-sm">
+            <div style="width:100%;" class="well well-sm">
+            </div>
     </div>
     
+    <h2 class="tittle">Pizza Items</h2>
     
-    
-<!-- -- - -- -- -Everythhing Below this
-    
-<!-- FOCUS ON THS SECTION -->
-
-<div class="section group">
-	        <div class="item  col-xs-4 col-lg-4">
+    	<div class="col span_1_of_3">
+	<div class="item  col-xs-4 col-lg-4">
             <div class="thumbnail">
-                <img class="group list-group-image" src="http://www.mysticpizza.com/admin/resources/pizza-pepperoni-w857h456.jpg" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Pepperoni Pizza</h4>
-                    <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                $21.000</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-	</div>
-	<div class="col span_1_of_3">
- <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="http://blog.oxforddictionaries.com/wp-content/uploads/pizza.jpg" alt="" />
+                <img class="group list-group-image" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTEhMWFhUWGBoZGRgYGR0bGhgdGhoYGhgfHh4dHiggHRslGxoYIjEiJSkrLi4uGh8zODMtNygtLi0BCgoKDg0OGxAQGzUmICUtMC0tLTAwLy8rMC0tLy0tLS0rNS0tLS0tLS0tLS0tLS0tLS0tLS8tLy0tLS8tLS0tLf/AABEIAMIBAwMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAEBQMGAAIHAQj/xABAEAABAwIFAQYEBQIFAwMFAAABAgMRACEEBRIxQVEGEyJhcYEykaHwQrHB0fEUIwczUmLhFXKCQ5KiNFOy0vL/xAAaAQADAQEBAQAAAAAAAAAAAAACAwQBAAUG/8QAMhEAAgICAQIEBQMEAQUAAAAAAQIAEQMhEgQxEyJBUTJhcZHwgaGxQsHR4fEFFBUjM//aAAwDAQACEQMRAD8A6Q8AAbSY+7/pWyXLCR/EVGt42nbg8XFRlZi14872Me1JnQxl1RNwAOL3jzEAfX50O+hpZ0uISogmNSQdoNjFqkAOm5jqP3NQNbn1/mhubUxOBaKdKAUj/aff8U/KgxhVgk94FAX/ALiYjrdMCw6imAXBHPG3Sgy4Zi4NxNvOLV1+07jIXH1kp/t60qn4FJUFARBiyikE3Am8UUX0jc36EaTEdCBUODxQgkCIUQLAQJi3+2381vj8bIEKtY8RbcUQyMJhxiTFwQZMTydgKgQ3N4ufhB2Sk8+R69dq1QWlQdI/8fD5i6YrYclKleYMK/Sd/OmDOPWCcJkKhsI3JnnqZ8j5ftULroA0pG+/Un1oxhnELMpbQU7aiopNvYgjzBohnLG+8hbqdcTAN/X7HWuPU417mYMLHsIsLYG5Em/6+/St1MmwF09SLHbyimGauMshKUIStZIuRPO+144rfFuJS0Ekp1fEAR8Jg8db1K/XGjxWPx9LZAJldzHCFZ0t3I4BF7A2871PkGUpZOt8HWDYaVFKfMmI9P1O3mXZk0lcBbalGAAi0njVAtcif+K1zfHsOr7sPLWtKZUoEoaAkHcAyPe+k3qPJnyZlI7fSWjpVQjvHrmdsDdwfWt0ZggpCp+IBQHJBJA/I1zPtNiGygJR8c+EqJUFJFvCeu1j1oHB5q93jC1LVCQlASiJUBJKRxabnffbeox0F9jKExg6nZykKAUi4i82g+9LsUv+4hZbW5oEJjToQTuQJlStr7VXm+1iSVBa9ASDCVfEbc7gHyvRnZzPm3oa1QtJkzcwbiPvehOAB7EWcTKNiN83z3umZWClxQI/1EbxJHMX96WZPmgMAFS1oRq1XCVT8QI2gCNzc9KtGLxzTcIJTJGx3NKWmWn3VJLSZHTY8mRsRt9ae/MEEEH0/P8AiTLxo2KgOExBc+OClN3TYwVE6Epib2j5dafNIQVCxSE+4MRz5Ghm8mUwolkApV8SDZJ+QtuaAweNWwC24yUNiVa9QVfnxG+xNyeIpuPKBrJr6/tv83AfHy2sdYjEDVpSm4Ahavhny6nyoZ9pTjWkkquorCCJUAbD1sLVXcB2iQ4spRJVvpSDMeXBgUQ12nRrCUBOlSm0pX+KVq8YiLaRz6U0OvcnvFeE/tD8zyvWAlLkqEEpVYxaIjoLUg7QZohtaMI2PCm7qpICSOOp3PvU72eutp04gKKi53YKU3SATqWVC0EAQDeTXPs3zJLuJdQi8k3ukkclcbkG5IF4pujDw4Gdqhna3N3sUx3bCQG0KkAqlxYF7Dnj61UcUnEtoQpWuSd/awtfaaPZfQlwrS4ohA0jwiACRYDVze/8Vsl1bq/EkJbg6tSbgWIFxdUwa3lc+gTphhWli1p1Tik6W9LbYiyf8wgz4jaSQoTHl1pu3nb+ogJCAkAXEDjed+tt6Ibz5RQsJ0aUqhIMcafceVK8dmpeUGSEpKlCVFRInz5V0rjbekLGgxqSZsvte7PwoP8A4i/zrKAxuT6VqTrBg8BQHsCJisrfDWI8Ue07vh3wUJkFJvbfcc+VGMNiIJt529KT/wBSUt7R5j0t69K0wmYkm9hfy5PsKaDPBqP8YsRp++tLw9+o6X4/KvQ8k3t+VuaDGLCum8WmTE9N+OK6dUNMQfFsb78xQ2NXpVMDaZmLgewqPM82bw6QXgpOr4RBM9T9+VKX8SMV/kOJITciSDB6jcX9K6N8F+POte8bv4xCR4ovNhcnnikuOxiQfFITeL3vHE+lE5flRdUElvSo7QsmPMzTzBZRhmJW6QtSSIWqIBm0Db3P0pOXMuPvOVL7RZl2S4hxIUkqbSNlK3I4hO/5UZmbow7BLZ1HdSnEklXS6bAX6URmfa9hsSFhW/Q7VW8N2/QEysKKlKKdht+o3qI5WymrqUY8LjdRejtO8lWgk93veQQkmVAHkAn5UU7nCk4hkoTKbyIgpn096ExOAcxaQ60hoAK4EH/2gCTBPP71rhWCXFoUpSVASFrkFSeoG0ib+LmiOP8AqPeV4uO1jbD9rWlqWpS/8qRo5MbEeW/vU+fOYZ/DlanIcLZABMFKiNxzInbzpLjsBhMGmXE63YEidEyQbwTe+3kKXOK/q+87pKS4rwttoB8pX7C2o9aYrsBX7TGw475DXzkGTZn3EKWpuQCkSLwREixlQJMc3oPMM9d+DWtwgGx1GAeYOxroWTf4eoLaC9qDg5TYiDNpG/nTTJ+z7IecKAlWnwqkc+uxPWj8ANXpJz1Q2e5E49kGVvYt5IgdClXEm5tAmw5FdRyfIGmlqecMeFKQkAWIGk+hMAelWfAZYhClqSkAne339ignmQsKSh0HrbrMXpqEIaMnyZS4JWc17XZbhtY7tKkavxlRATG8zMz6UXlWJLbSkgsiCZdQT3h5Nt5IjyuauOK7LJfKQ+4kNo/CIknkz5/vRTmFZSktsNQJuoC9qFsSsxINRy9YVUAizOTjFPrdVAUqRCNRuDNv0k10jBZg7hMOHHvi/GSR4U8Uexg0tIKygKNrACRH60p7YYVTjaUpSdQjcymJEhXHp7Vh6dSLXvBXOcjhX7Rnhc875KS25qmNvM/tT1FkkKM9ZvXKHs4bwrlgppSYEAWV5m0A0Ye2qlBQS6iRwZCj7VMTxvkDcYelYkce0smavYJpYBaA1SNSZSRwdo4pYtODEFoKJSZAgHYyN6pufZ+FrQnvAs7k9J4q4dicmVoU+8khBHhkXOx26HrUT4iTofOGV8PuZJhCpwKW6tTKkHvDNwWzvq4IuD7VWu3GCbw4C+5QjUSVLSCCrUOE8G3Xnar0nGNpW8t0w2pKkEQVfSDva1UftxjziMKErSVPFwFCgnSEoAIM/wDdO07x0r0Onzjhxyd9wcArMGXt+fxKBicwAI7oAReyRv73PqfOhWXXXlriVKUL7DbrsIivEYYj4gelM8JiQ20QlASbgrG5mBubwelVarU9NmYmBYfDuNyVoMC9uvFxxQeGV4wd1TYefE0Zi8zKirgK3A2Mbe1e4Jhk+LUU8aRNybC97bm8bG9EPnFv8jNYWbwD5yTPuBBrKes43CoATG1vuLVlLsTeBnXTkLikhN45KiRHkJuRx86qmYZghpZQSfASkiTuCZ2Nx7VcsXmpA3iuR9uFRiCsGQ4NXlNgfyB/8quOELPP6HEjvWQX7Sz5f2oSXW0uAd2VAKHEKMdeJ+ldFbxDbYhtCUD/AGgJ/KvnM4hR8q6pkWJU8w24okkpgz1Fjv5ijxKpNVK+u6RfKyivSe/4lrS4ylwGS0q8X8K4B/8Alpqo9ksYv+oSltClagUqjgG8noJA3q/LyovoUwN1pKZ4FrE+hg02/wCltZfg9CCJCbrP4lXJUefadgBUvXZhi7Dc7FlRMPgnZPb6GH5aEstkgpKyDt+HqAOb1zjtbmKtWnUR0BO0kyT0/io8pzB1xwttrUZuFARANjtck3N/PzNSuowql6l94tcgHSQEgg21apnqTXmnF4oByRaKMJIXcU5R2dxGIdACCR1JIAtvNXvFdmGMIyH1sB10EWklCT1i03/Ohcb2vbaj4koAkluNSY3JEXkG+3vXuU9pHVkqTqUlSvDcwAdiZ3i0x51UgCilEnyhybaPsgZU+wlwNd0pQnSRBHQxvt1pJnOUOtlMKS6oLB06oUAqEn2giadtZ0MOCrEPIOqIAtHvyKGznHtBxKy2TqGhTgUApII/IbzQMAw+YgY2dW12MIwXYZkd33raFlMlajfWone9z71YMVoYahASkAQm1h7CluGeUrDhsuFWhPiXaVpGxm0GNzSDB553q1haFhKTCVLulVuOvStbQIURZZnNsbqWfBZuCidQJ3gmIHytUeY9pMK2jWtwAC9iT9BvVTzHAHFD+2QgXSQSU6jIEwDxtHnxFbjsiy0Na0qxKk/EnWSUiPwgAyfI0KFgKmsik3+0suEznv2ypgjyJEiPPzoVrEJXLZUkLHxKT8M80pyptDLSjhWlocPxJWoxqInkXgdANhR+CDaVBUJ1lPAP5Ab/AL0GQ3Qv6whjC2ftGOJYSVHxRYArAFgOATzeji+0gAAgSOPuaT4rDrdUE3CFTIgfvPyFa4zLVoBWkJJiCVWMeu4piCiYlzyABhycMhCitbqlSbA6dKfQJA+s0rezJDj3dghWm9v2oZjMAiStpwiIBjeIgXuTcni2/ns5gsSsLU2G2wr4SRcJO/v60aubAE44620XZy1htBWsC8nzN53rnT2FSXZZbJK7QBJJNXPLuxjhVocUTJJsePTYCrNg+zTeHMokuERrAnSJuE+vJ5gU0sXXtCRlRquc+yrssht3XiUSAUkNpPiM3vBuLQfXmuwNYlK20hKSEkCAeP4pEz2Uh4vKcKiDN/T86bYNSGk+EHc73+lR8cm2fQlOfw3AGPZg+M7NhfjTAVyNkqHnbcXI86RYvLVIlDibcbbbelN3MwUpzwr2MGDYRuB1NMV4cqFxq6/LipGUZPSLIOKrM5pmHZ1sm4N9rb/KkGadj3CB3ZBF7G33/wA10BlZVqS4nSQoiOo4P30qZjDibwev7UtfGxeZDYPvKh1B7Gcaf7MvhUFsnz4+lTYDso84BeBx8+m/zrsK8MFTKIiwAiD5kzEf80RgcCiJiD0287df+Ka3V9Q3lWvrOOUAWZyZPYF43n6VldnDAG0/Ine9ZQeL1Xv/ABA8YSsOsz1NV3tplcsBcXbVf0VY/XTVzyvCF1tDiRZSQocbif1ozMsh71lxBPxIIAHWLfWK+qcAibjzLiyC/Qzh2XYBTzqGkCVLUEj359BvXc8yYLQbabGptCAiAmdOkAAat+OTVb/w1yJAUrFEfBKUdZIGo/Ige5q2PZiyyrSSACoqVe5KpJPzrwuty2wUGqlf/UcpbKEQfD/Mgyh8pKydKCEgCREkne97AbedD9pkpW2UuuemxgRyDuPTrSXHZg1PetuL6lJJKCDxB/Sl7j/9QozKDCRYbgbW4Ek9KUhLfFv5ncmVaPIwvsrlv+YllKSNM6yCCRcQE9YMU2y7DMBJbV/bAAXa5gHz8/Pk0Hh8keSjuW3QSoHxaSnmYJn6U9y7JUJI74BTiUg2E3394NUAmwBEsQQfwyHO8Cw74VJVtbSASqwMSbTzBoPLQnDo0oQud0lKRAHCD85n9KnwuHTiMQW9JW22D4luEmSOEgbg9TwaJdwGhf8AbcSFJUREkm4mD7fpROzHYiwFHlP1kGIyptekPEazcJSBIPW+xpdmTWlUpbDhI0pkyQRt4QelMMBhcSVgqS2TcFZV4wLQY871M1lim1hUgyqLxN94IFcfhuCDRqJM4yvE4htstuBnQQrTPhc5IVHHEc1G3k7rbgxKlyoeFKUE6QCY24gRuOPM1anW2dSUKUkuTITMEkzHqY/iomWihxRKfArfqCJueL2v5UBa+8MHiNRIEsl0updKnOilAAHbwp2Gx+VZjXsQ2pKGBq1iVLHB3Ht1NNnsGwlWruUEHxGwuffepHu0YAIS2vVF0pTJA42EcV2xsmYWsihcByxbgX3StClGSsBKlJ4G/CqZrwSFukOFUJSClEAJSU7Qet/pQLWaBLZUhZSpZMgoiLn3ni9EY7uyyhxTo1xIkGCdjsfrxQimBHr3/Sc1hgf0/WHN4hAV/bMrSLgqvBiZ86IwWI+IuOIgnwiL+hneq0VpKUuNjVqA1AKB0zuJveo2DpSO7Cn5WARMkenmDG9AOat7icyKwr1j7M87Q2IEIPkBM9KBweGxr5la22m9x+JZE2tsJHNGuYZhudSRr3EmaVdocQ++G0Mu6CswdIkR1N7QKdzaiG/PSKVFPb943xmETqQ2glJ0kFUeIje584qB5kNyG3NSouVLkp6QAOvWvMShxlsES8sAC0TteK1yrUtAdKj/ALpiLbgC316UFVkoDf8AaEpJW71C1NhDaUpcVA9T6kk7nmluJWhSHAhS45JtMjiR6VG7icQp/wDuABkpsBB07xq6nanCsUyEgKCdJ+fn6XqhW5iq1Mb/ANZu9yq5FglNuC3xHjYC3HBq9pxASNI3pY440NKkgabzeNulqV5u62lK3HHTBQQBJEbyYHrv5ClvgGMFknKTnanm+cBE+JxOrggbfXm9B4ZwK49R/NIGsQH3IQklIjeb+4NFs4gocKVSJMwfpfbj8q8/uaMc2M49R/IO525EfLnyvvUyFX8oig2HgRY+k1M0vyv14+XPtNH4etQOULGrj6k17Wow3p8z+9e0YwvB5rBewuI14NHVBUj5GR/8SKsJIFzauef4Z5mSh5AAEKSr/wBwIP8A+Iq5OhSrTc8nYV75+HlKus6Xj1DA+9/fcBONawzelIVAUqABySTPp/xXOu077jhC0oUJUIkRzI9oFP8APsyWFLQlU77Dy/Og1YpehCykxpCtrKURb+K+bUM+S2h2FPK4qd7NKQgQ8oqAGogyiVRCRNyd5gc02yNvuR3jpSZESJ+H03mY36VWMTm7wJ7wlMwACCJGwI8uKzD458pWdCub3mDe1VIXB7TcvFhszo+Ix4Q3Id6FJFzc/wCkRbn51n9YhbmtbqjCY0hUIPJ6G+0T+dUc5g/3IHcynYmL+XntzVhy7LWwlCVLKlqFkkW2vHzkdKZXI7kpPh9tyLPe1SsLqawjKW1Ombg78kHaIvI2pn2bx7a0d468CfxQYvE9ZofHYktA94nW02hPggEgSoTsSdvW3nVfeyBvENoXlzqhKwChU6UdYJGq3qelMU8e81uLj2+cujmaMIWAQUrX/wCpeLbCZuYFb4p7EIbKmx36iRCbCBbbyifO9c/x2HxCU6HYJSrSYTq9SCRt1pvlvbAMNBCU61Cwm8W5ilKomupFVuX5hKVpUosht5AusgSJuYV0vHsagwb6HFJhZKLiwNoMESd4qvK7QEoHeGNR+AW1Ajcny6Vqe0YaT3aEg6viUYi5JBAHMm81pUAwQhIjPMBhxiUjvVGUqCUGbTe0mONj/A2HbdLbilE92kk2NojfeSry2qDANYQifidWQCqQTbgyZ+XSisfBbcQlwCAkTMmTEGQeQYnaaE41b6Q+TKAIyYxmCaZCyQrwhd5M9T5zQOd58goQpGkzwlM+A72gRNes5SqO6UEqnlRsBwCZ++lO8LgkM6fChSrXAskfWtUGuJGot6BsbMrGRsqxqTqJZYRulPxH9qsicOhpBbw6dKbFRm/zPp9aIxS2ZCSbk20gwSLi4FhUOPWFShagkCLAeKLWgXM9aJxS77wAeRsDX594PmCkrs2ZWBInnreo2mtSklspQ5EqHN/+fOpi4IToBKTAUNtN7nrNMmWEIBUAFK5MAKPqaQq+Id/n0ms/hr+fvF2JwLihp1bi5oLFpLDQ1KMpECwFpmOlG5g+VpsS2oH1pd/1AJa04gl0JElShcDcWFzTy6n7d4tAw+/aR/1QWhKkrFxCjuDHT96WnCOvWRuSQD5dflTJClPtQzDcbeGABwIrMtJQE648JN0iAfbpzTg9ekE/X1hOKygIaCCvYXNJ8PkS3ilKjKFqIUVTISCIAMWETW+b9o094AlUzKQOfX761G1mCzrbadCYOtainYRsnpcGfU+6eozEeWpZ0+E1zBl77lphAShMJSAByfnyapHa3GtphZBG5uLgW6e59uaSYvtBiUuhAc1hUgHj0jad71DnBkaXHNa12KeImbnyiYqLnyOxAbEVIN3cdYZ8KSCDPzn2t9aY4fEm0wfr/wAfOqvh1aQE3OkASd7CJpi06Os/Qj1pL5ODGpwFiWP+sA4+ZvXlJxiP9xHuqsoP/INO8EQPsvlowS1KcxDagpMEJncEEbj1qyozVtYKkKGkfEo2AAE28zYe9c8wXZTGPGXlpZTyVLC1ewQSD7kVmf4wYNpOHRqWJ1FRHhUSTIMb2AsIjqd6+mVXygpdD5y9nPUZLdtwN3M1OPKAAncFRIETt5k+3McVdMnxiHEpZBQ4ofEb2uYHw7b38q5mrMn1+NwBLcGxSEiP9qQBBsPF9ae9js7Uo6ENkEgatPQGd+BUPVYRiYcGv5xGcINA3HXbnABtKSUykE3O6bSPPp60Lgs/Jbb8AEgAmOLASOKthyleJI1p8EyqfeN+eaQ4bK0hJTqAUCYBIBEWHTp70tHY2DJSVK9oLhtMhsjwovA/CCZi/G9O0CY7lYVchTaoBiIMncGfu9VvGZSpCitLhQ4q0q8QjoAOu8GostDrj2kJJCB/mbSeB9zasYk6E1UX4jLTjlqWUMpkBwwQsXMGJHUeYpniMtSykd2rS0JTCAORuo+tvfzpQ5hlOJ0hcupNyNp4Incgz5fSpXMPiCtKtX9pRSIHBnkSOn1o0Pe4DCiKMPyxsgbqS22dCSI8ajEqk3Em3rUz+W4ZxaT3TLijcqKE2B3ny/alnaVOhBQhQWgrEJMjxWmSNjIB2pi0tnDoB0zqF1K6wbX9TXasgQwWq5A3kzTyClpxSEgxo1BSUz5KkD0HWq25/h+Euf8A1x8XHd2n117ftT3BpQhnxqQidSgmYtNrCKqGfZ+6TH9QIJMBPhA4F/Q11Go1WttSd3sfiUFWl/DQj8QWpMz1GkxMnmk7WNWl5CZM60A6VTISq8HnpROSdncasOKUVMylZQpShqWuCADfwz19fKrb2Y7Mt4VAUSHnUxsISCJkDk358htWVZ1KCQE8xjrMca43hbpc8QgHTcC11nf5cUHgl4oI+JJQFJQImDYGbCTvuJq2tOFSPGmJ6x6fDJikOJw0HSlxIAUCQSbCekGBfimFSNyIZVPlqFOYNS0pSSJkK2MSNooPG4fEEpSpIVBlJ6EUizIurxRRhnlqSANRUowINwDsLfpRiu1GKaP99q20C4PTxWv93rOfuJpxkAcW/SH4LPVa1tr8WlQuRHxXj9PajsbniQPBxBI8uY86CdxiNBWr8UEA/r1t1opOCYn+3qlV5mQDFYWs8exiCB8VakWNzdpRQoEKQVRMfDIj86x7CkkIEJG4J/ED6870vYy4tvOTpMiyRA3n0+dLspaW6lySRpJhpRgzO6T/ABtSLN79Y0KK16R2cB3CTCoCkkwL/TpJ+tCZHCmipSlKnYERHSBxPTboBSPO8ViB4SyVFSYBVZURBjjncGhcszFKPA6SkoEeI7bbDj1rfEp9bheEWTZ2Ydg8AV4gKLZ06VGVC21r8XpVny3mUBxTVlWKgDJm8fvNO28csrKZUEwNBGyje8eUCo+0WLKsOELhS1quR5nY/n70ZxhvijMeQpqLOzGXrW5rcHw+JKZ2J2kcc01zDBI79SUoABSFFe8HkRxz61NhMR3Cm0rTHeGCetp23tBp6jFtQpQTqEEmAJjaY9ag6g8GqoxrcWvaU7HJAII5t8v1r1ldbZk5rJIQpKQbBQAPntQ7Kqj6nZv3i1FajIOfc1lDhVZUNQ5W8R2pd3kEG3mI+96UYntCsSQbnmaVhLiuD6m1HZl2cW3hGsUVJUlxZTCQZT8UST5pI26da+4ogXFtiyBeRUgTfK8sexpJJt5yZ9Yrq3YrIkYYAa0FRGyeSL3muVZFmym0FAJCVWVG49DVtwXaFttuBdRETzfz4rzM7tyg0SKl4zvN1Nt6Aoz5XPmLVz/FZkVO94BqMgQbQOsUPis5CtnFKPEDn9agy3FKSuVRJvB4FJQHluPVOKky65FiklTjjpUPCECfnI/ep0hiStKoIJ1AGCoHzibRQD2LSRdSdIA5296VYzBtqIUh0pHUXBk/zV4QakPOyb1GeGfKtI70FRUq9zpAPU7wIH0qx4VwpUGysK8Mg2kATNvWPnXKxmCg/p3SknSbEx69TTxhslReWvwAFJkm4IMCN5oFu4/Mindyx4PMEJJUuPA6oDSfikdJA348qUdose2k98sKUkcBUfpVXxR/upba1uqnwJSN9XlHXcmugZD2IU+nVjjoHLSCST5KVtx+G/nXcYJIEoGfZqrEJjD954RqKEpUYnbVFgKu3YjsthmUodfb73FQlULulGoT8O2oGb3PpVmzLDt4ZgJaQhKdUhCAkAbwTyqPzpHkwGoqUVFUdZJ+e5rg3GidQ2cFCFmnalPfvBKQ42QkqUpMQkCxkC5kfkKi7J4VWGdWpS1OtkDQSCDaSZk77cUTm2FxC1Qjwp5PMD9K8yYuIJKdKigGJuJMBO0Wv9aUuRLpe/0hW/Cm7RjlXaVeKUSvDraAJ0lZA1DymL2v0oXMc3w/eyP84ACBMkT8J6itHUPPtK79GlwJMISbbmIJi1LclR3bZK25c1HYSQLbnc7U18xqL8NLsCvlLcttgteAfGNtvX3FLE4KdJKFKaTvybbWmh05s20QFNqOo/FNrx15vtRmLxTbKS23OpxQPzEb8WilPmvzE1XcfxMXFxNVdzA608S3ZPiABIMenkaNewPcILjWpSh+CRe/mQPrSLFYpvDpWjvUl5Z1QoSEniLfvW+KzDEiNbaSjhSFnURE7EAeW9LDUCW7/wAQjjugvb+YVhMY8tyXmUt6SYM7puJnihs1zHCqUUNvp7wiYF5jaVAdal/6gFEqdaMRB1gH1sbUhzDM2iVN4fDhKrEaUgJA5FawAG/Wchs6HaMkOIWye8HkSSJHQpJoLF4DDOo0uqLqiPj2KL7AJ8ub1KlBDQJJhUWAuJF6k7P5m24Vt6IKbSeaBB5gAYwuQpYCRYjJ3kICk6XWgITJ0qHzsRVZx2GxaZUWVyCFgoBUAPMb/KeavmPwyVDuw8QUgLIi0evrUyHf6VBK0l1XUA28pqxU1o6iRlv03OT5/wBpHHlpnSCExI3AJB6mDbe1WDsbm4SpCioWSUFP4iCQdVze46cn2X9pGcI64t2SySdwDckWlMX/ADqDBYBWkKACxY7Qfs9N6XlCsNym3CUBqXLOUrecSEJVvb/cTx5nY0rSkgkGxBgjoRvU+TZu+kam2NtlQpQt6mDQwWVEqO5Mn1O9eV1aoKCmKTl6w1IMbGsqAV7UFCMnNjm6uEJHtP5167nmIW2GVOHupnuxATO8x1mgCAOa9Dg/CJPnX2pizmy5NMxP1McZVgSsfudqZYbA+OIKki9vxdY9L/Ko8qxCUoOoeGJI628r0wzPMEhCC2onp/pAjib/AGa812PLtOxgA7keMxKUHUG0p0jSARMb3Hn570OXEOQVW03kWNLsRK4v5mea0bcIP0iuVLNxpfVS64fBocaGkyPUT78GoBjGe7LVoAgxuKrzeZlAAEpJtQBxcSTdRO45vTR8pMU+0ZMy2udU9LApAv1FOslyXEZgrw/229lLCYkT+AbTHNedi8j/AKhXeYme7TBCBz0n511nDPpQlKW0gDy/L0pgUVuKfKVOu8I7P9nMPhEBLTYnlZutR6lRuaLx+ZhPhkauT0nalzGZpbT4yNSidKbk7/SpUJC7kCTfpXOSVHGKA83mitWFLhCiAYm28XkeoozD4lTI/uBBOkyUp034ATwKCwDrqX3CtGkXCSkzMeX8VBi8XqcLYB1H8USE+RvUuMetbuUv7XqKcbjH1qVoWpCjcKIEQZtccUx7LZK6yoqcWVBSbW9SZ9THsK2aZGoeLc/YFWuHOiY+sfKjTb9tzGyEL8oGHUqX3aoK4nj7mvMewlCZsOJ6TUz2FE6oE9ebbVT+1WKWolCVf5YBiYKido9IO5p5bw1JaIxY/GcBTUPxWFSBqJBCbkD86jwCS853ikgQBAHnIB8ov86o39Ti0KSpSFhCgZFlHT6Ak9Kbtdqw0lOhQ1GLemwqRsYZrXt7Szi6Cj944cwQCwt1SnCrwhAQLAcmTc+tNMLmAUVJEKQkhJBiAbSPlXuWdo0veHTqt4iIgE7CfvaleKzpDyFttJ0rkiY5HPyrjiOP1iyxfRHb9oTmWasrFhITdUSCY4H7VVcVnY7xKkM6U7LG8SbGY6T70zw2AKEqM6lBI+I23B+7zS1lCChaiojURIBFp6Dm/WpHyNfmleNEA12jhsNqYC1OeGOI8XUXoRvMWlKAZ02EkA+L1Ipa5h21YdKPHo1QpXhERN9ovtasy3CJZMobUrUI1Hkbji1HjdV7iY+Mm6MsuFzBDgsseH4iBvFCZ1iMSVrWiAzG0WM7+tGsYdvu/CmBIkAwT1FHqxHdgju48ICE7ibckzXooxZaMiA4tqU97KW1NpefAj4gDawHM3jmjMi7PtqQHnV90hYhpuSZUT4VHqT/AKaZYslbSSQP9IAuPFvM8cRUOb4/usGgruphQCSVEagmBqtGx9dqkzOp8imemoZMe5HnecNtob7qU+FSQrkFMC46ETv04pKw73njMSSTaqxmmLK1GZIuoi0HV4gAOl/mT7Hdn83bWAidKwPhVY26dfapOo6cjHaiTnIC1SwBNZWa6yvK3CnKsPglK2Bq1dkOxTuLdCUyECdSwmUptNzIE+QJ3rpfZz/DNCYXjFBZ3DSDCB6kQT6CB5mr4htDaAhCUoSmwSkAAegFfYtkrtF5Xw4/Kp5H37D/ACf2nC+2fZkYB9tCSpTamwQoxdQJCxbp4T/5Cq/mTiSkJAIIuL7Gux9vss/qmQkEBaDqTPyInz/QVzZ3sysf5iwPS9Rs27iVbl3laSiwBMmpkYBz4vhHnT0YJtr4RflR+7UvW93hKUkgD5nf5VgLN2jxVWYI7hbgJlRO6ulOcryZCQCqPQ81mXZY4pSSBCR+Efr+dXZOSQlDumSnaBsT1p6Ia1JsmTdQfD48YdbaQnSTcgjy/Sj2M3WFwEhdiZTtuPkbjfzoLF4cL8Th0jbz9p322o7Bs6Ge8YV3iTe4uCN459qzI1agqOQGobl2K1hXhgifiveTt5bVM2XELAA8OklRHJ4FYnDqWgKUNEDVvb9+lqZIdbjSbWHv6Csx+lwcp9hK2/nnxDRK7pSJ+d+tLsXnCW27OaFISZCwY8vHyfI04aygw53cAAkkqG3NprnfaTLHVv8AdFUITBAkErJMCw2gzvWqD8Zj0VXPCPeweZvYjEqISVJQiSZ3UqIibARNq6JhnnZPekW9rcWqm9i8gxDCg+SEsATEiXCQUyRHHhi422q04vFBwQlZCvIfnWq4UX6+0HqFBah29/aSO41erw7eu96EzjJ0PeI8dPL7NeowJAjVIFzyes9ZrfELWhIIKlTsCLH15FLV2UkuNRfEa4HcpOMy2HFKPgbQREEqJJ3UoneNgKDzHF4TEK0rSlSgbr2UI2AVN+Ded6cY9x51fdllKUqsT8Q+Q/Olg7MeGEoG258PtEEillsbny6l65XRaybizK81bwpUjVZw21KkpI4kWMzVpyBYxTGoLLZmbWJO1z0kTVYw/ZwpWe9YPdgAklQt0PERvVg7MZa0olGuSjfe8DaegJosh0F/1FueVv8A7hWb4XTCdZUXPjEzMTe33agw6hpiYglRCSoKUkAxuRzzFWrLcCgkrJ8UQD0Hl5+dK8bgy2Fd2SpIvFrnncWqc43A5AanJmQ+UncDxJSlLemNSgBpiU9ZjepGnNShqB1C0gW+XFLkZwtBUp5M6eTBUmfTjifKoXcxdKw42EqSASFH8rc1i493c1iaqv1lmGLQqUFCgAfYxyL2oLMcWe7U20uVHZRvAmTHnFhU+WMBxGtQCCbkdeD7+tBqwiErCm1JWCNMcagd7edvKqS3BOR7wMGPk9V2m2HcQ0xBW53kq4kGRCR8XB56+VAZxiENNBS5UQDpDhAEz8QT1gD0vVpewzaWwVoAJMz/ADtXIu1eOKnl6jIJsAZCRxt+lQYkGR9SjLm0YtxL0FUmVEyTv6evG1ed2lwCRBF9U/ttehQZub/p6VPh2bEBXneCPWDf5V7irQqeUzWbhaM5xSBpDgMWlSQT7k71lQBC/wD7YV5yq9e0o9NhP9A+wm+I3vPqNxyKV4vEVM+71qvZ7m6Gh4lDyHJ9qGri7g+aYnzqmZxjCFBA+NUkcCByPvioc2z1Tk/hT97mo8izVl092pIU4kwlRH4VTIB8jfpel5MZ43KMRo9oBmcwkTMi/nUmU5brPQV5njUK0ptB3F6OyhotI1KN1R7UGNfeUMxqW3AsttgAaYSPefPrxROFzVQNxYTAEfc1XmmwrxJNzuamTZQCTM/ZqsKZMxEsWMwKH0rSuyTBB5uJO/2K2w2DCGAnDmRp8Hn8+K3ydoISIM+taZ7iUhI1lQSSPgOk+Q85PFJyqApJi8bktxHaZl+GWNanHNU7J4TG9DYnHoC+7k6o3FvamWFwmpMypAVEg79L+cUO7k7aXkqKZJBKlqV8IHlXJaqKEMlSxJMTpx7qWV94ZJVYWPh4FLMky9TuI+EgK3ngCb+RvH8VcswZbKSExJ3MVp2eWlJUo34tzFc+mCzceQ8SRGCXR3fd6VECRtvBoZrCpEq0wTTpeLQdiKExTwkDcnpRY1o2TcU72KAqKm8cCsoCVFQ8rUViMaoJCdI1GwHn+goheHA2EKNpFQnBmZUZ8gL/AFNHmc15Z2NVOzIMJgltqshEHeIEdTHrS/H4Y6yAgrBV4/vaNrU1aWSrSlCtM+IwYHvReGSCVKUQbwkfnUnFWAUSjkyksRKzmDYU0ppREGRA3jakuCyiEwypxERBkxH5QavTzDd4Gkm5uZ9zNA4/Fd0kaUFQJ4vvzWnE5O+05cwrisq6swJUqx1IGlSOvTbr186b5PmSVo0lOlxMakibTtUWLSGz3oF7aupH/E/Kqx2jx5Zf79uLpAnr0nyp4sL+feAFDmvt/iM+0aQlGhMKKpBJAkXmPlQ+U94hOlLfh3I9f0qPKXy+lbj0JEWnr+tNMiw4/o1hb3jUpRB2sDAB++lJ8M8iwP0EaDoKffcH70gnUpKXCsSkSTo5iOT4RfiaMwiNMqZCIMxJF1WBJE7elCYZwPBTBe0mxWtAJkDi351tmmashelpsFLaYKthtF/vmoc+Q5BdV8p6CgYxxXvBu1eaqbaKNU2meJ59riuV4xRUSZk007SY/WuNU+htSdCr1f0PT8F5Ged1OW9SRKTNo+f3+dTtOwb/AJVElR60Xh0KBkDfp9j9avMkk4d6aI8yB+de1KSjkEHpo/4rKG4VS5dov8QFqkMDSBI1qFz/ANo/f5VSMZnV5JUtw3jc+/Sl+aPkEAWBHG/z/atMJlq1CSNKepsPed/ejGOPx4NcmheFUt4EqvB2Gwt9TW+DeS0sLKwkgzvf5D9qAxzSQNKFqVe4AIT5bwDQyMEs7CKZ21HUg3dS95VmLOJUfFDg2kRqF7gc7xFTYx4mAlUxAiI5vJNVHKcOtpYXEkEETMfTymrGt0mVtKnUboVumfT4hPPpXnZsBVuS9py5MbNQMdM4kstqUJOmJT1PSfS9E5G73o71caQfDMi/nHxUnbzBJCgrYfFOwO3yP6VticwQlAS2bdAbbR7UBzODUZ4a1REvWSY0PTosBuqP0pr4QoHVI4sN6qOV54Gm0No8bi5hPQcn0qRefBC0lxIWpO6UGY8zfbyql6oEyJcDMTxGpb2cRAKlD0/eq7j8YtxwLCiEiRA5rTE9s2u7lSQOn8GvEZm0CAoDxiUnrQ2pFXO8HImyIZisagNkKMSOan7LZUvuw6V2VKkpPwgHaeSTv8qqubugkax4SQPUE1dsDmiEoSy54SR8Jtb0pTLzepy2qEiB4fCDVq1gieD4famhxaUJK4J/7RJPAFeYpltKNSQAkVVmO1xfeVhEIAMKKb76fP3rAjYlIhgeK3KPcZ2nS0pKIClkSb3THBi0+laYXtIlSjqFzED7vVZV2XfKwpSwlRmBFj1Ej9qb5Z2cDP8AcdWkkdbAfnUxyE7JlXBBoSxYvM0ttFSoANyeB1n96Vt4kHxo2naCD8jUWc54hTfdtJKgYClACADv6ne1JssxOteoOogERxqEWsPb5UBzgsAdj3hr0tqT2MsOZY4kKS2P7pTKQrb38tqG1OrQCtWmE/COT+gn1qHGPocUFCy0DfUIIMTI+R4pRjMQ2/4GXgXNlFUpHmQR0tannqlJ0ZydJxXYm2CzYPpc7w7EpmNpEVT8wxHfpCNQgQFGb22AHWRVqTkXcMKw+rX3t5P+q2x425qi5rh3GVFxAlSP8xI5TNjbcj8vStGZWPEHczwONuPwS4IaZbZb71WmwgAyZvv8q8xuMS+3DcpSk6fArgGTM7TIvveqfl7/APWOJDi9CRdRJ2A4Hn8qdZ7jWVIQxhEgKSsJ1CSTJMz1NG/ImgZqFFqxuP8AL8D3LJRKQNyrYq+tUDPn20qIQZM+Ink32vsKbdq8zLbaWgu4EGDPreao63Cskn+aHp8Jc8m7RGbKFuu5m4BN+TW0QRMfOtkJt/z9itkwrb+fXg16QkBNyTDXUAYjj+abBuIkR92oVhmDsR8xPtzTJLRCYM3iJkflv0rDOkraFRv9/OsrxOqPxe3/ABWUFTbippSgSZk9YEDfYcUQzhlquSTwbz+fFG4HBBUTbyiZ+7U0SwLkJBKSPF6/f0qq4LZGJ7xOjAC9/n970a1hB5W+ptzsKaN4ZKAJMk3IgmTHTc/levFCUqBGhIGw3M/QV0WTF6sOJ46W+4NQvsEAKG82tB8vWig0TtttIPHE9fu9YEQCCoe9vL511Tri9s+LxwUkxCoAvYzFvP1FYjBEbkRNo+lqzEqG28dfO9R4fFFsgiCP9JFvUdDHIqTNgvayrHnIFNLDg0BsKXq8WkJTHS5+5jik2CaLjllGVTcgxA3njpR+GdbeSG9akKBmLevS/NeYjDLQEhJC9PwwIMHcEbXN5qJywHnl+N1IpYoxOEBXDh0hNgtO0nbivTmDpT3Txum6FgXER09PejF5W66CVpIm4m0jqJpZjne6SUKEn8JoFfkajC1EQvLc/UX2UOkGFT6xJE+Zprm+JW4ogLOpUajM3mSlImSeNvelHZnsliH1DEqQUtg2URYxaRO4EfSri12eCEyApTpUShQRAA2Oozz60eTOFPEfrBxKgN/aKn8/ebYDQlQiIPHIgnelmWY59S0qkJV4gkgDVJAA/inWLwzmoam0mJAMyBcD570z7J5ahDilqRsr4lbdbT0mlHP6RpGMW0sDLBQfEQbAJkkmTvc07D6UI/tpG3xW8R6X5qv5pm7CHU7THxKmB7UtzntI2SEpWCEjdO00vEwsiRZQTTSd/N3Sf7iQlIN0piAYvMec89KSrfbQUqSAoDpNvWg0Z8g621r+Ikgna9VvMsYpBASuR8o9eu1CMPm3LceUVLLicI8+tRQ6kCbBWr3ggRHqRRmD7M4Nsa331lydkKCQnrwZqu4PO1FjRqM3melLHcwJO5NFjRuVfeZlfy6Ms2MzDuAQh1wpAgaxBIkkAECCKBwS3XXUwpKdQ+E9Ii5CbTekS8eoq3KRaYibfp+9YvHqbOpCynqJ4kH52ox04s/OB/3BqPs8yBtpBcYUJSPG2mNKki5KdiCPyFLMEkt4c4taYvpag22ubdCPmaRY7O3Fkwd5+v5+9BuZitTQaJ8OrV6m37CrMfTvxpjI26gA6mmIfLh8qmaRAqLDovRlWAAChJSSTZmqU0W03ET9QPzNS4Ri07db/wAVO2Dsj959v2rpknSANgI5An6/tRiCYEcbdB+lDBJsZjpuPWJ/Q0S03I2mfvqT7wawzgZ4W/8AtP8A5H/9ayt/6X0+n717Qzo0yhILdxP/APIqTCHwn74rKynxRhyEDTsNh+lK8QfGkcTtxuivayiEGDE3WeZP60vwiyVCST6+hrKyuM2QvnxH1P60Krf3r2spZhiarUbGb1dmrlE3sn9KysqDrvgH57Snpvij3OdvT9q5h2rFz6j86ysqHD/9ZSO06nlJjDMJFhoRYbfD0rXtA4e8SJOx5rKyueBj+KJMWbK9vzrzDuHwiTBJkTY2FZWVM3xfp/ePHb9YkzlRhHp+1V/MFGd//USPyrKyq+kgZPSF40fD61AResrKqk47SRoW9qBa2+de1lCsb6TTEix9KUYtRlN+KysqrF3isnwyI14K9rKok8LYFF4XisrKwzo1asTFrCtp8E89aysrB3nQgbA8kCT7USk3Pv8AkKysrjMkbizO5rysrK2dP//Z" alt="" />
                 <div class="caption">
                     <h4 class="group inner list-group-item-heading">
                         Cheese Pizza</h4>
                     <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        Real cheese made from mozzarella, pizza sauce and your choice of crust.</p>
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
                             <p class="lead">
-                                $21.000</p>
+                                md. $12 / lg. $15</p>
                         </div>
                         <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-	</div>
-	<div class="col span_1_of_3">
-<div class="item  col-xs-4 col-lg-4">
+
+    </div>
+		<div class="col span_1_of_3">
+	<div class="item  col-xs-4 col-lg-4">
             <div class="thumbnail">
-                <img class="group list-group-image" src="http://www.foodanddine.com/wp-content/uploads/2016/05/Pizza-capricciosa.jpg" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Veggie Gardens</h4>
-                    <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                $21.000</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-	</div>
-</div>
-    -->
-    
-<h2>Pizza Items</h2>
-<div class="section group">
-	<div class="col span_1_of_3">
-
-	</div>
-	</div>
-	
-	<div class="col span_1_of_3">
-	       
-	</div>
-	<div class="col span_1_of_3">
-	        
-</div>
-
-
-
-<div id="products" class="row list-group">
-
-
-
-        
-        <!-- First row^ -->
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="http://www.pizzagrindersbeer.com/wp-content/uploads/2016/08/DSC_0477-e1479482455354.jpg" alt="" />
+                <img class="group list-group-image" src="http://www.gojjs.com/sitebuilder/images/Meat_combo-600x450.jpg" alt="" />
                 <div class="caption">
                     <h4 class="group inner list-group-item-heading">
                         Beef Pizza</h4>
                     <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                       Beef, pepperoni and your choice of crust</p>
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
                             <p class="lead">
-                                $21.000</p>
+                                md. $13 / lg. $18</p>
                         </div>
                         <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="http://www.ginoslongbeach.com/food/full/buffalo-chicken-pizza.jpg" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Chicken Pizza</h4>
-                    <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                $21.000</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="https://i.ytimg.com/vi/o7isWuT-IXw/maxresdefault.jpg" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Pick Your Own</h4>
-                    <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                $21.000</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-
-
-<!-- 
---- ---- -- -- -- -- -- -- 
-
-Everything Above
-
----
---
- - - -- -- - -- - -- >
-<!-- Second Row^ -->
-       
-<div class="section group">
-	<div class="col span_1_of_3">
-	 <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="https://www.dmagazine.com/wp-content/uploads/2017/06/DudeDiet-677x451.jpg" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Chocolate Caramel Fantasy</h4>
-                    <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                $21.000</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -242,29 +118,22 @@ Everything Above
         </div>
 
     </div>
-</div>
-
-
-
-
-	</div>
-	<div class="col span_1_of_3">
-	 <div class="item  col-xs-4 col-lg-4">
+		<div class="col span_1_of_3">
+	<div class="item  col-xs-4 col-lg-4">
             <div class="thumbnail">
-                <img class="group list-group-image" src="https://www.dmagazine.com/wp-content/uploads/2017/06/DudeDiet-677x451.jpg" alt="" />
+                <img class="group list-group-image" src="https://i1.wp.com/www.thenomadicvegan.com/wp-content/uploads/2016/03/sam-wood-by_hand_pizza_chiang_mai.jpg?resize=600%2C450" alt="" />
                 <div class="caption">
                     <h4 class="group inner list-group-item-heading">
-                        Chocolate Caramel Fantasy</h4>
+                        Vegan Pizza</h4>
                     <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        Vegan special comes with vessel leaf, mushroom, pizza sauce and your choice of crust.</p>
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
                             <p class="lead">
-                                $21.000</p>
+                               md. $13 / lg. $17</p>
                         </div>
                         <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -272,33 +141,47 @@ Everything Above
         </div>
 
     </div>
-</div>
+    	<div class="col span_1_of_3">
+	<div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://zeliciouspizza.com.au/wp-content/uploads/2017/03/pepperoni_pizza-600x450.jpg" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Pepperoni Pizza</h4>
+                    <p class="group inner list-group-item-text">
+                        Premium pepperoni,  real cheese made from mozzarella, pizza sauce and your choice of crust.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                               md. $12 / lg. $15</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 	</div>
 	
-	
-	
-	
-	
-	
-	
-	
-	<div class="col span_1_of_3">
-	 <div class="item  col-xs-4 col-lg-4">
+		<div class="col span_1_of_3">
+	<div class="item  col-xs-4 col-lg-4">
             <div class="thumbnail">
-                <img class="group list-group-image" src="https://www.dmagazine.com/wp-content/uploads/2017/06/DudeDiet-677x451.jpg" alt="" />
+                <img class="group list-group-image" src="https://ct0z9jdn.cloudimg.io/s/crop/600x450/http://ungree.com/blog/wp-content/uploads/2016/03/Best-pizza-in-Gurgaon-NYC.PIE-Vegetarian-pizza.jpg" alt="" />
                 <div class="caption">
                     <h4 class="group inner list-group-item-heading">
-                        Chocolate Caramel Fantasy</h4>
+                        Veggie Gardens</h4>
                     <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        Black olive, mushroom, green pepper, roma tomatos and your choice of crust.</p>
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
                             <p class="lead">
-                                $21.000</p>
+                               md. $13 / lg. $17</p>
                         </div>
                         <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -306,19 +189,272 @@ Everything Above
         </div>
 
     </div>
-</div>
-
 	</div>
-</div>
+	
+		<div class="col span_1_of_3">
+	<div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://cf.tasteandtellblog.com/wp-content/uploads/2011/09/Buffalo-Chicken-Pizza-tasteandtellblog.com-1-600x450.jpg" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Buffelo Chicken Pizza</h4>
+                    <p class="group inner list-group-item-text">
+                        Buffelo Chicken, silento, real cheese made from mozzarella, pizza sauce and your choice of crust.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                md. $13 / lg. $18</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+    </div>
+	</div>
+	
+    
+    <h2 class="tittle">Side Items</h2>
+    
+    	<div class="col span_1_of_3" id="side">
+	<div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail" >
+                <img class="group list-group-image" src="http://burgerbeast.com/wp-content/uploads/2012/10/KingsCountyPizza_14-600x450.jpg" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Garlic Knots</h4>
+                    <p class="group inner list-group-item-text">
+                       4 knots made with fresh dough and garlic parmesan seasoning are served with extra cheese.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $4.00</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-........................................
-<h2>Drink Items</h2>
+    </div>
+	</div>
+	
+		<div class="col span_1_of_3">
+	<div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="https://s-media-cache-ak0.pinimg.com/736x/a9/e7/12/a9e71230820c611d3e3b1de2a9cfd261--homemade-breadsticks-homemade-rolls.jpg" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                         Garlic Parmesan</h4>
+                    <p class="group inner list-group-item-text">
+                        4 pieces fresh baked twisted and brushed with garlic sauce and seasoning.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $4.00</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+	</div>
+	
+		<div class="col span_1_of_3">
+	<div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTho2_bZ9y8LeQ9mO2sIF3SbiYqG3Mv04BfkKJpd1wJFN2GOl2b" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                       Twisted Breadsticks</h4>
+                    <p class="group inner list-group-item-text">
+                        4 pieces fresh baked twisted and brushed with special butter and seasoning.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $4.00</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+	</div>
+	
+    
+   <h2 class="tittle">Pasta Items</h2>
+    
+    	<div class="col span_1_of_3" id="pasta">
+	<div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://s3.amazonaws.com/finecooking.s3.tauntonclud.com/app/uploads/2017/04/18204803/051095094-06-linguine-shrimp-pancetta-peas-main.jpg" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Linquine with Shrimp</h4>
+                    <p class="group inner list-group-item-text">
+                        sautéed shrimp, peas with light marinara and sprinkled, parmesan and served over penne pasta 1 serving size.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $10.95</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+	</div>
+	
+		<div class="col span_1_of_3">
+	<div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="https://naturaldirectcanada.com/wp-content/uploads/2017/05/Turkey-Meatball-Pasta-600x500.jpg" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Turkey Meatball Pasta</h4>
+                    <p class="group inner list-group-item-text">
+                       Turkey meatballs, fresh leafys with pesto pasta one serving size.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $12.95</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+	</div>
+	
+		<div class="col span_1_of_3">
+	<div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://www.veggiekitchen.net/wp-content/uploads/2017/04/Pasta_MushroomV_Web-600x500.jpg" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Mushroom and Fennel Pasta</h4>
+                    <p class="group inner list-group-item-text">
+                        Dried and portebello mushrooms, fennel ground with lemon and parsley and linquine pasta. </p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $14.95</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+	</div>
+	
+    	<h2 class="tittle">Dessert Items</h2>
+    
+    	<div class="col span_1_of_3" id="dessert">
+	<div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://centslessdeals.com/wp-content/uploads/2013/06/oreo-banana-split-parfait-600x450.jpg" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Oreo, Banana Split Parfait</h4>
+                    <p class="group inner list-group-item-text">
+                       Yummy parfait made with crushed oreos, sliced strawberries and banana, chocolate syrup, cool whip, strawberry and banana cream pie yogurt in a cup.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $4.50</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+	</div>
+	
+		<div class="col span_1_of_3">
+	<div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="https://s-media-cache-ak0.pinimg.com/736x/ed/7b/99/ed7b99c8a4a7afca4d7ea9046b72a085.jpg" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Chocolate Bread Parfait</h4>
+                    <p class="group inner list-group-item-text">
+                        Yummy parfait made with crushed heavy chocolate, sliced almond, chocolate syrup, and cool whip in a cup. </p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $4.50</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+	</div>
+	
+		<div class="col span_1_of_3">
+	<div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="https://cdn.shopify.com/s/files/1/0642/6881/products/BlackForestCakeSlice_e448f031-eec5-4abc-883d-14db5c6b3fe2_580x@2x.jpg?v=1434667833" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Black Forest Cake Slice</h4>
+                    <p class="group inner list-group-item-text">
+                       Chocolate cake brushed with kirschwasser cherry brandy, filled and iced with fresh whipped cream and layered with cherry prserved.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $5.50</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+	</div>
+    
+	<h2 class="tittle">Drink Items</h2>
 
 <!-- FOCUS ON THS SECTION -->
 
-<div class="section group">
-	<div class="col span_1_of_3">
+<!--<div class="section group">-->
+	<div class="col span_1_of_3" id="drink">
 	<div class="item  col-xs-4 col-lg-4">
             <div class="thumbnail">
                 <img class="group list-group-image" src="https://www.papajohns.com/static-assets/a/images/web/product/beverages/std_aquafina-compressed.jpg" alt="" />
@@ -326,15 +462,14 @@ Everything Above
                     <h4 class="group inner list-group-item-heading">
                         Water</h4>
                     <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                       </p>
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
                             <p class="lead">
-                                $21.000</p>
+                                $1.00</p>
                         </div>
                         <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -351,15 +486,14 @@ Everything Above
                     <h4 class="group inner list-group-item-heading">
                         Pepsi</h4>
                     <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                      </p>
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
                             <p class="lead">
-                                $21.000</p>
+                                $1.80</p>
                         </div>
                         <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -376,12 +510,111 @@ Everything Above
                     <h4 class="group inner list-group-item-heading">
                         Mountain Dew</h4>
                     <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                      </p>
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
                             <p class="lead">
-                                $21.000</p>
+                                $1.80</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+	</div>
+	
+		<div class="col span_1_of_3">
+	<div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzqu-you1MvgWMBquLHsE8E_iBoRPhio0d2t_kOjgVssU95KKmHw" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Fanta</h4>
+                    <p class="group inner list-group-item-text">
+                      </p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $1.80</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+	</div>
+	
+		<div class="col span_1_of_3">
+	<div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="https://i1.wp.com/www.tophealthremedies.com/wp-content/uploads/2014/08/Cinnamon-Tea.jpg" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Cinnamon Tea</h4>
+                    <p class="group inner list-group-item-text">
+                      </p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $1.80</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+	</div>
+	
+		<div class="col span_1_of_3">
+	<div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMVFhUXFxgWFxgVGRUYFRUVFxcXFxUXGBcYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0lICUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAMIBAwMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAEBQMGAAECBwj/xABDEAABAwIDBAgCCAQFBAMBAAABAAIRAwQSITEFQVFhBhMicYGRobEywRQjQlJy0eHwB2KCkhUzQ1OiFrLC8URj0iT/xAAaAQACAwEBAAAAAAAAAAAAAAABAwACBAUG/8QALxEAAgIBBAECBAUEAwAAAAAAAAECEQMEEiExQRNRBSKR4RQyYXGhgbHB8EJy8f/aAAwDAQACEQMRAD8Au/0gLBWB3rzRu3aw+0pqXSWqNwKVHWY32VemmejF60a44qgu6Xv3tHmtjphl8HqmfisXuV9DJ7F5ddgKI3/JUSr0wedGAd6gd0sq8Ag9Vj9yehk9j0Ft47gujdSvNndKK53hRu29XP20uWrgXWnmemG5bvK5deUx9oLy6rtCq7V5UDqzj9o+aRLVRf8AxGLTPyz0q56R0mfanuSy86ZE/A2eZVFFRSNqpTy30hqwRXY6udrVKx7TiBwGSZ7A2rXoaEvYNRwHJVunJExMKz9EdoszpvEcPyTMX5uHQJqo9HpWyNosuaeRB/eipPTbo02plHMHgp21votYPp/A74gNO9WfaLhVpYxnktM8iffaEbPKKR0XvfotPqQ3LiFYDVpxJIzVc2bEk8XQPNWV9gwtEtCVg1Ty7n4ToWgF97TBgGZSHpzsQ1gyE9uaLaZEADNHsYKufBaIT3SoO2lZ5ZQ6EE7k2tOhobqF6TRsRwUjrMJ9IpK2jz49H6Y3BBXfRqm4aBW/bTGt70kbWKq5JOjK90WUy46HZ9kKNnQ88F6Db1gTmnVvZhw0QSTNOPI2jyb/AKPPBbHQ48F647Z4XAsArKCGb2eV0uimEyQmtG1DRCvN9ZjCqfVHaI5rifF1W1oRkkwV9tiyUtPoiH5wpqQ7Q71eNm0xhCnwjndZMbKN/wBFN4BaXo3UhYu7tQ22eKYysxriCuSCvPWdSjovWwo4UgCDkSjS5cF3hWoQUg0RtClC5AUgCjkSjRKwBbUjGIWGiPApKdJTNaFIwKKdckozrywIinVHZc3Xehq7gRhOqioPz7gnrL030UcC4bOrYgWvnkmtHbzaFB1MyXAnCOIOgVa2ZWL4zgxuQ21XkPaDxTZeGhceGN7HEAwxoZKulKpLQeSr2wq7SMJVgpkDLcjhShdeTPLHUiv9JLmICcdFO1SB4qndLLz66BuCuXQ9sW7e5adO7yNkycRSHmBc1cgpghbuqAFtbpWIZSdv1HPqRuCCpsgJtdUpeTzUFShkvFT+J5I6iUk/Jjk22BNZJEK17LfDQCk2zaGeadsZwXqdJnjlgsi8jcfuF1qwAlJrrbbG70TtH4SqVcUc5KRrviPoNRiuWWnOnQ2vdu4gQFWri77UlGtYoLi2lcTLrJ5pfOLu+zmlcb1bej20w7s71ULa3dMASm+x2FtUSIXQ0GabnVcEi6Z6E1qxaov7IWl37NJ4Y1hWyxdljxu9V1Ta4nMLzSOsQ4F0GIypaZSFARCXvT6DREaa4IRDnEqHqyrJgI1IAtyAuQZ0UbIYXLtj1nVdy2GIOSA3XZKxdOqRotMYmtj0buKmbKTo4u7LfMoRjLI6Sb/YHqxFLDGZ1OgWdVAy11dyViHRhlMzcXdJp+6yXuH77l01mz2T/n1eZhg+RT/w80+Wl+7K+tHxyLdjvLXSFHthzqj8UaJgelVrSMMtmD8Ti4+UKZnTGmYDRRbMfY/Va4wUY039ExLm27SNbCe4kZFWS9qvgQCe4FEbPbWe3G19Mj+Vo90E7alcvLW6jXRVhkxPz/H3Buk/BVNq2dV1SRTec/ulel7Fp4KLQQRAG5J9nU7ioe1WIHID8k5NbDljnvW7BtXzIRPdZFtLa2AZAnwVcq7Xe928BWosqnMOb5JddVqg1LY7krVRnki1GTX7L7iJRkwOkJC66tT070/7Yd3BEi7pD46Q8CQvLv4PNt1L6qS/wxLgA2tLtJhVIaJJUrPoz9HOYfB36oe72U+oPq6jH8pwu8iuto8OXTYHFrd/1d/cKTSBb27Dm6qr3T84CZXtjVp5Pa5veMvA6FDW9lOZWDLKWpmkovcvcq/1A6dNE0LQuMAItlnmneyqTQm6f4XmyS+fhAXLoj2ZscNGbQjjswTIATZkQsgL02LDHHFRiaVFJAbaRWIyViZtDR4e7FvHkoutI4og03DQ+a0Q7e3yXl6idgjN0eC2yo06qGs6NxC5DwUNq8FXKmGdVOhhDubBzW21S0clJTumuyVfmRNy8kDmLnCinN4LAwo7gTnS4B2NVg2B0aqXHayZTGZe7SBrHHv0UfR7ZXX1gw5NGbuMSBA75Cs/TWvUbS+j27IpMpsqVnaQHfA2DnAG7keC26bTqcXkn14Xv9jFObboEr31taQLamK1T/dfm0fhG/whJL/blxV/zKjiPujst8gudmbOr1mBzabiDkDx7t5ViseiAbnXe1p+6M3eQRcNRme2C2x+i+5PljyVNqhuNm1aww02u9gvULTYlu3Rk83mPTVH4C34AwdzfmVeGhhhalkkDfZ5JZfw4uHZucB3AlP7X+GDR8b3nyar04mO1UPgQPZDEt3uJ8ytf4jH4tgtmtkbM+j0+ra8Yf5nSfNTUdmUgSREnUySheuYDofFGUbxhiHNHKVfEscrqBVya8hVCx+76ArqpYneR5BHU9oUyzCHtB01Suu+AWh7Z4iStDpLhAs6LY+2Ah69uHDN7T3wodnVmtkuc0md5n3Tug9rhIDCiqa5QLYhp2eHNrh6FQ3dtVOYLfFWtthTOtJvhC07ZVI/ZLe6R7FHbED5KI+zqTmzyXVKjn9pp5yPVW6rsE6squHJ0EfIoCts+uz4m4xxZmf7SqehCXaTFuCuyC1vKrey4h7DqHgOXdzs2nUB6uKT9zSfq3fhO7uUFOphkloLR8UTiZ+JhzClbXY8S0y3WRx3EcDzV9iT5LbU0Vqs99NxY9pa5pgg6qW3uHEiFZ/ovX0XOqQalExi+8zUDw/RC0bVo3K6kUWIKsnmM0SXoYOhZ1sqDSU1lihlYpRDzSztOs3wp27KdJAzQ9HE1mRTjYV2Zh2pK8HlnOKbTOxCcXwyu7U2e5ucJB1kGF61tXZ2JmQB7l5ttTZ+F5KfodWsqplM8PKBw7JRPbGa1UqKF1VdBRZl3BlK45oulXSI1IKLY8xIQniDuLNsa/dSqtc0ST2YOhGufkFfm0aN6WumGwGVWzuOme4gmIPyXley7r6yn+KPMEfMKwWG1+reAXOaNA9oBLd2bT8TYEZQee5b9C/kcJdITkjzuiXao4A9Vbjq6TcpHxvPN2oHLUzuRFvQYwS4xxkgeqDZtFzhge3rMh27fs1MO53Vk6d0jkhxStdG1W9YR/8AJLmVPJ4E+AXVbVcGanY4O1LduhB7j8ygrzpAwiGwO/P1Cq+2djXA7Qpuc3cWdof8ZVaqPc0wZB4HIrDlk34Gpouj9oF5yIHdkuXXlQHXJVe2qOO8p/svTOTydELI5TXBG6Jm3LyU12bVwuBc1p8BkuRRbwHgjLRgmIWnBKpFHKxpVoCRVY0SNRAzCcUbxjqeKAOSU0nlvcuLio2JHkujuUkC2iTa2yqbqZdABOaU2+yxunzKldXe7InLgmdkydVFTBdmrayIGT3jucfmjadKqNKx/qAPtCIpU1O1iNlkgYVaw3Md3S0+srDtID/MY9nMiR5tkIuELe7Uo0h9ZVY38TgPQ6ocB5ILuhSrNxscMQza9uZB4ZajkqlUtqpuQykwtcGh1UkNFLA7NryRkDqCIGbSRulrdX1OsZt7WpUd99odRb41ThxDuSHbe3KlI/X1QIkihbg6gfbqu08ictQhJ8UVLNd3bKVMUKZlz/iMGMM9oifTx3IOkqtZ3hrU6lwQS/shlPOGtccJc4/egiJOccFb7LaTW0mGu0S7KAw9gxOEk8Mx4KKl0G/c4LVplFNad/TiW03RwwHfv0zQztsUSS11LCfBv78VamG0DdWsWG/o/eI/sPrKxElnlor9nCt0rst7wnNx0YrNMlsjWWn5JZfs6sYix2HjGXmvDXFuvc3rhWOaHSDEwtOqr23aeUyVCNpNGYCmq1xUCGPB6UrSpFnktUVpzSuCxOatmoW2oXSWZUIaoWi33rsAgaGFYLW3aNQiTSYREJUtVz0V3FWoVu0O8e6vdKwbVZiyD2nC6dCQYk8FWrzZYmWhO9m3ppvcHaPDSe90T7rXgzJpuIVyN7a/Yz6uvSLGk5HUA8WPGh5KW5trj42VfpFDcOy8jwcCAfLwTFjA+i4cQVRWPc14LHupu4sJaVp/HKK+b+BcsfPA8ZfNa6Azq3HOWY6RJ72EA6o+ptUx9YXkfzdXVBHM1Gz7pXcbUrNyqinWHF7Bi/uGZ8ULW2lQd8VJzDxbmPLJXeqUuYsDg0uh1S2pab6dLwplp/4YV2/bNiMod/QXR/yJVeNCm74aoAP+52fcALipsN8jDhcOIc0z4ApiyJq6X0Euy10dq2R0fUHi0/JN7OvQPwuqH+mV55U6O1zP1btCcgY+KFJY7GrB3+X/AHfqmKSvlL+Sp6UarP5/7f1UFRrNcbh4Ae7lUf8AB6w+wB3Py91JS2RWkS97Bv6t2fP7X7lMbj7f3JbLRTNMH45PMtH5o6ne4dOr8ag/JIba1DNatw7m94A/7lLUdRntV2Cf5pKdGUUvC/qDkeu2q4f61s3vdiPoVG3aGMx9MHdSYPdwSJ9xs5gOKrjnUAjllAz3BQu6ZWdPKjbl0bzA3cSlvU44v5pIulJlobQpO1dWqd73AeLQYRNK0o0xibSps54RPnqqNe9OaobIYxg3AHPxKpe2uldxXMFwaODZ93ElUesx/wDHkasM/J6d0g6X0abSOsndDTme4jIe/Jeb7R251riWtDQTqfkq8ahcZJJPNGUKJIkcY8//AEkvNKbGLEl2eidBqPWUoc4Nl4DiYktGbNefWGd8hWW5tH50w+myjnE9t7nT8e+JHckHRizAp4iASMmzuykn2TU3Gea2xjwhEo8ssdHaVFrAwkwAB8OWXJQ3IoVWlrAx5jR5c0kxluVeNyDoUO6oRv7ldx/Ulkjdg27s3gscfiaCIa7QjMcVpRVqrnkuc2SdTLhO7QGAtI7WCyzGtRqCA9pngQhr3YFOpTwF2XgqdIPJEWmOYbUfHInJcNvFkaUsSs2PG4q9xLffw9YfhfHh+SX/APQjmaPB801r3T2f6tQ/2me5QHaL3aVjJ0DgAVfJpcaX5H9fuIjkTf5gB/RMnJzvIrql0MYPteqkfWqg5vz8Fjb94+17LCo4lxTNHpSflE7ei7Bw80Y3YNJo3eSWO2i4/bPouKty4/6h81NuHxBk9CXljGpY0xw9Aq1t+1GLs72keIzH75It9UDV0lcNe1xDeOn4t375pmOlK1GkH00k+TvYG1ThDXHcR+Y9UkeIeeRPutMxdsgQQcUcCPi/fJY6qHOxDfB8xPz9Fmzxa/YQ2NbtuJgPJJ3tTqybipwuaNo0ZuM/velQzqELY9S8i76YWhrABB3HTvXdzaMMkBhI1wwQgNt3AxQCBHDgotm37G6yZ1HzUqVepH6Fd1MYUrd4+Aub+EkeyLp1Kw/163hVqf8A6WqF8xw3fvkuzVB0hLlqc3XRWU76RDXrVCc6tUjnUqH/AMkvFV05ud/c7811fXJnCPFQOed6ZGWRrlv6lCVzAd09+fuojTA3BaaTxW8+KPPlkI2szUuErqnzz9D+qnZTnTfu3+RVZSA2QbRJLQBnAHskgt3EnI5apxVuIcQRoVLRuBOW/dx8U+OeUI9DXkbE1GjmrjbWTRa0Mu1UqPeTvwt+rA7syUpbbCpJaIdwV1rWOGpTpHSnSayTpijE/wBXNXY0Ulki2LnK6CdjXALcLRpK7uXNzWqdk9o7BEKIUAZk5rpJimhfc0HNEsOvNEbPDnjt5eKCq0CTlU08fZN9j7NdObjpJyyRsgY2hlkFiMdTjIEAc9ViNMraKJUuHcEfsCs3GWumXaa+wU/+FjdPioa2znDd3LlwhslZtnUouIzvLV0GcuDhHqNyrl1Th0nKNc4/YT2o9+DXC4DdMeO8hVfbNZzhLmtkb25tcBz4781ozTW2zl7WpUwmjtFvwH4TvAl08kBe1XscRJO8HiDoUvpvnKcz7d6el7KbGhzAXwMiTI35/ksW6E1ulx+pqxZXj4fQoo1qjzlr5IvtgS4jnnouK989zgXADPc1unzQdarrnmfIoQline0u9TL2GAoOObSHdxyW6dtUmY/RLreth36Jrs677UkkzuC0whFlfxD8htxbmnVZWjs1RiHDrG5Pb4wf7gudt7OpY8dF3YIxRGYJOg5exTlo66g6gIDxFWln/qMzLf6mz4gJJVoudSxtnCCCY1ZimJHAkOHhzz5OvwzxcR6/3/wKkpco5tbljMpJBGfehNp3UjCwwN8Rn+SHrNy7++PRA1Gnf4LFjhFh3OqA7thOiEwOG9My3x8AVE5kbvOVsTpFbN2lUA9ts+U98pj9MpR2ZB80rk/dUrGngkzgnyyyZqqROsqPERyRW7QLnLfl6+gzRTJZB1neum1J1lSAcGk+ilYw8gOQ/NRyRVs4pv5H0TChUbEmRHGAPNc21riKOGyjUaWtyiCTrB1HskNqUtpSyCpfW2rmY3feggkcCcsXeory7D24WMaGzOQEiNNFHV2NUZLiAWiZPHw8vNStssIBJMEZRpOeU+C1YsKRZyGPRKx6y4pgzhDsTvwsGI+3qrgLXrcT3faJI3ak/oPBLOjdHq6ReYHWHqQTrGtUgcNBPerLRtnvY4hrgQSPsn2Oi7+lx7YFbtil2zyBAeQOCEdYYT8RM807p7PcTBce4CXemQ8SmtrsZrBid2ebu08/IeC0Bsr1lskYhDTPPXyTx1AUsol3Dc2d5PyRvWCIpNw8Xfa9dEur12ghoMnju8955qypFXbOXWwcS5xxOOZMxPgNFigeTOixS2DYb+inUmFo0G6yt2W06VQnODpB3nlyXNShVMgFkjdvWWkaLI30WjKJlJr/AGA17ifg3yN/eNCnbKbi2HSHbpInzCq229vVaRdSc1sxlrIHGdNyrNxUfm6KyS7ZyzZ9CjSc9jSau4uM4TMS0aZcUsFk7XVx3k+Zkrqx2k904iI4wDhPgpqtZpaX6ugdlsZRwO5cTV4p5Ix9PpeP8im0+hTtQsogRnUO+ZIB1JKTsY7UZd/uj6hLnYi3PnmVDUoNO8g8P3onafCsS2ylz+5SyCI1MnhoF03aLhoQENXokaEny+SHbTM6LU8koukiyjZZLTaTsGPNpBBa/eHNMgwrb0b2lSNXrMjQrYg9ozDHGDWYRyMVB/K5wXntuHFuAAxzTro3RdTLgASx0YgMiCPhe07nNOh7xvWieNzjz2aIxUUOtv8AR2pQeQRibue2YjdPDx81X61A/rH5L0fZPSGn1HV1iesp5NIEHDuBO6PZJrmnScS4QJM5THhlovN6hrTzq+H/AB+j/wB5BJX0Uh1F24ef7nyUb7V3L+0/mrTdsaIDS3mZ8skBUtQftT4jLyhGOoTVoW7XYi6kiJ8gMvJSsa4ndCcMsGjRs8/3qpxZjgqyzoG4RG1nWT7eSkp2nKPLNORbt3KQW4CU9QFNsS/RjwXD2nj++Ca1Gd/PPVA3PcrRm5EJLS4hp4nRWHoz1YYcZnrJBGoGEmJEbwRmqhTDc8bsIjLeSd2XDiVNRrECAfzTscVGVlWWq+osbiAdLHZlpzHON4PI6pUy2+y34cXZb/NpAlBsuHuIzKs/RW2pdZiqvAgSAd/5D811dNDfIFDk2jTgpjSmwNAb8Rc7tOdlmJOfihr6pVoNGGu0Pc6OrcBiwHjByjWUTWoOqEg3AYwnJtEOnxdDZ8VFa7EtWS7A57xvqnKfwNgHxldapcJdE5oebC2mHthgIj4nEe5Ut1tGk0/FjdwnLzSp9V7jEw0fZEBscgEJeWgPJMSZaid21HVS5pgNGgbp+qgqtzHJKurwn4jloAmtlVEREooIfSqGBKxQutzuK2jRCmuu4OIAzxaR/wBv6JzsPpE1zwyq7tD4XEFpPIgqsUgZGN+Z3AiQN8ugZo62NNjpaIPE5uz0EnPNZqb6M8ZuLLPX2qx1UQTEwQQQJG8GFTunDcdfHGRaIJ4jI/JT7Q2hUAc6m54IzgbjwAKXsu6lyQahOWQlZtTjnkhsXfZp5krEhruaMzAA8P1TPYF/Rc0h4c109l4M4p3Fhyw80TX2A12pkbhzVaqUix7hwJHLIwfBJUXgSc+W/wCANUuOw67acRxEwdMOh8ZWmNG50HmENTuCBxG8ECD4LYcNwEeRHIx7rPKOPvsXyFRPZccpiWif1T9vR4MIGKearAdGkjxjyKuWxSa1Fp6wktkOnIyNJ8CM962aPIpPaMhwFWmx2hpxQmlvZhsZDvQTGHCQAXZ5rtoLc5IiMu9dBUWdnG19ml/bZIeBu1I5c1WG3mcPH9Qy/uDc/EeSu9Ovhbi4DzSUXFJtXFVpMqUnD61hAloJ+Nh1a4Tu1XP12hjmW5dkiwClWkCHmDzkeoM+a7Y4t+8RyDcv+Ss95/D6jWYKtlWwhwkNfLmH+r4h4yqxtDortCgP8kuaM8VIh/oO16LhZPhuWHK5Rfd7kguMW8N4Ag+5GfgualUH7YPIEeu5KLfaLmuw1DHHFMt8P0R7bmmdHjxxZeaxTxzi6dg+UxlbOJg6bsuJRTi0OAkAHKToOBy8kCGhoxNAMbxEDwE+q4q13HX9+amy2BtIJ2g9rC4SCRIieGmkpNdVw4ZSOGQ1371LVfJJ3k92qhFIuOS0Y4JFNwLRo7yi26Z5Bae9rdT+/wA1NZ2xrkA5N4cuJWzFgnlkAJ2JTNZ2FgyGbnRk0czxK76M1nfS6gdqQRJ5GBorfs6jTpUcLIaN/Ek6kqiUbh9K87GuJwE8NV6PDhWKNeQo9Dtnk6nuLVP1sSGtLjvJIlLbbab3SMAa/KBMjPUkj2RxtGubLtTmc/3kmkI/p9Njwaj8O4jUD8R3I3aFzTNOWua6SIwkH2QDLBh7MDMwf3vQx6PU6Ty+mxrTvLcpRIcYRJCKbVaIE98DRB3AhyltT9YA7QiESFjoVGlo7lpAMvKTRhOoyWkCHm1EYR95xidYndnuH71TC0ol2hBbMPJJB4kic/DuVQtL8g55jPKOzzyTzZ14cBgDDrpkBwASItFFhfkslO2DAGtJdmczqd401Qv0Z7j2WwRqubC7kzEZSZzAk5eg9UVVuz9neNf33plDeiK1pVHPa2dXeEBcdMdjNYOuxNbJDcOgLiTJnmmWw6oDyY0b/wClVf4o7RLgylOgxOji7d4D3Ss2GOSO1kfIuFtwzBzBGhW+oIg6EeRG8HkmGwmMZbN6ydJkAkiTP5KYVaJOTsna4hBB5yuPl0eeD+XlC2mKxS5DmM/z0Vu6IPAp1GvAEEQYguxbjxIjXmkD6lMTNRmW8OafOCjNnbba2ngaC8YiQW4SBMcSPNHQxyLNck1w/BI3ZaXXEHMgcB3oa7uGlwAPMxyy+aQV69QGc8zIGpAUDqtUnLPKMvNdtsahvtPahAhrhDRpnKqlxtAuxSYnXmjX0KgMwTI38dUA+niHwxpu1WecxkYjbol07dZvLH4nUid27jkvWdm9N7SqwOxkA7yMvML5+v7E6DepLevXt3g0HlhPCCDyLTkR3hLhk28MkoN8o+irh9lcDtijUB+80E+ZEqvbV6CWFRpdScaTt2F8tnm10nyIXnNp/EKszKtaUKoG9oNJ3m3L0T2n/EiyH+ZaXDD/ACvDh/yIV5LDk/N/YU1L2Ar/AKJVqR+rq06kcCGmOUmPCUvNrctydRee4F3q2clY638QrHVrbgT95rfk5Dj+I1kGn6ms927s0wPV0rny0GJv8/8ABWpewmFhU1dTqAb5Y/30UT7O4fIYyG8cQHp+iLvP4kiIpWoH4sPsG/NVzavSW8ravNNpyhmXhOvkrQ0WKEr3N/0AoS9gq7tqdKOtq4n7qdOTH4nOyHkU12HWBgYQN4z3+Oqq1rQ08c9TPNPbB+EcsvDgt+FRh0hjiW+lW7BIEkajjx9lStsVjSuusECHA56DEBPurELs4TLR4FU/pTcAvkD4g0gand+S1brKpHoWxr6k4NAeIOUzqfmU2dcQMMwYyO4xvVGsbSCQ2q/CM8nS2eUzHgmFQ/8A2EnSHl8GJ3YtEFIjRYaN92gTEjh+Y1Rde8kSM8tCqpSrVAWwabQNMLS4eMn0TlrS7ME6ZYhhxbweIVkwMiruGcHeuadcZZ5hL7uu5pwYYOpO6OBPE7kTs17YiPDQaI2QfW9wzCNNN4zWIK3qjCOxOo04HvW1CC9uy6TpGAdrLmBqeXjzRN9sxjWBrWgSQIAnU+uvomlCk1rROeWZMz+8ly+gCMcGdwOgEHdxgqobFNlaDBJAEg+P7EIO6aNQ7LhpzifJN7hktMCOHif1CW16AiBr7+W5EhLYtw0nOHxOOEcuE8gvMdrXBuLogbyN+6YHo2V6N0nufo9tIBB6sxpGN5Dd/Au/eS846C2IrXTnnRjd+knJvs4qvkJYTspwYDjcBrpJngA4dpLrjZ5e6CS47ml4c/8AsaThHkrhe2b3jDIgZAg5jj80nfsKs10MqU2t1gMaHYtMi0a5wg0RMS/4GNagpsynt4RI7iUwsLFujHFsaYWiDHMIbaOy6jXFwdRc/wC88OdJ0zdPKPBR0xeiAalBp5snLxgDchSQbD3GpUJAM56gnMaTOnoi6DAzJ72yN05gc96XFty6CazGxHZpUwGxzLjMH5+Rtvb1MyXPy+J9SMgdQym04QctTJy8UuTYTt14SSGkwDGXsP3uXddjWMxklxJ01zUBe6cgDrAzhvKftHQknU8BEM6NqcIxOZGHwaTpMlJmhkSr7TqEu7IInjHKFHaVGvqNDgWuHiHHlw0lPqVlT6yASZJ1nQaHuhQX+zBihsydC3I8yCNNfQpfHRYBvadOnGN0aHDq53cAJPel188vOLCROgOZjieBVmtej+hgkk5lxl0Zb3ZnXRE3Wyg2o0QI7+WaFkKsWGBLZPpyUBY7hCutbZrZ0GY5ZfNcnZ1MAERl7qtIDKUaTjnCLbayw8RHp/7VjFgDmAMzmP5eKnq29MDCTJIJyGQ3CT3qwBBToFuHnMJhbtgDjl5D9Vu4tg4dkZgZjeIMHI6woG2xE/FlvMjwy90+JVjOoYaMj674VP6atMsIBH1ceRMH98la7QvcIILh/NBMjgSq90woHCw8ZnSN0aaaHJMTKjuyMUWOaXZgZQDMwSM/l+ildtIEdum85wA3DDs8sTiQG92vJA7EcHW1FpHxUwHHXTs+eQTDqAJEAiB8IieA5qyIyL/FLhrmkUqbm/CWCSWt3Oa4/E7P9FKKV5Ub1lS5exzv9OjhDGRuEtJ3ak8+C5qkUwXPybOpzwzwOp9VPY9IbXDgbJdDsPZcG1XTOEEtGefgJO5XARW9TATifjc6C9zwMZI0MiIgbgEfTrb2kmM8I1mdPdLgZdieQTnkGhrRvgbyZnMyc/BSMuRPZAPjHnwVkANc2i4yWEk78j6wsQT70gxLfHCD6rEbJRfbr4XeHzUFwfYLFiAGDUTLRPD5IctE/wBTfd/5DyWliIBH/FU//wA4/HHhM/IeSrv8LBk/8X/iPzPmsWKvkt4LhU+LxPzUNB5wjM6jfzctrFZlUL6m/wAPcqC3YMb8hoPZv5raxKl0XRuk44m5/a+WSmtTPWznqM88oWLElF2CvEHL+X2TC3H1jRuwt+axYqS6CgW0+NvefSITd7Ri00cyOWixYlsJFemGuj7p/wDJT186zZ/2wfGFixVIQXR+sPgtVvl+axYiiMXVzGGFOTn4LSxXKmWw+t8X+xQIce1n9t48A4QFpYmRAzKGTyBpJS/pdo3vb/2lYsVwGdHnEWtMjI/WafienlF5NNxJJ+HX8cLaxXj0BgNPN1IHMYahg6SC0A98Iqi0RoMtOWQWliugA18dO4e6wDLy+a0sViAV1WcHEBxAyyBPBaWLFAn/2Q==" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Green Tea</h4>
+                    <p class="group inner list-group-item-text">
+                      </p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $1.80</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="contact.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+	</div>
+	
+	<!--	<div class="col span_1_of_3">
+	<div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="data:image/jpeg;base64,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" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Black Coffee</h4>
+                    <p class="group inner list-group-item-text">
+                      </p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $1.80</p>
                         </div>
                         <div class="col-xs-12 col-md-6">
                             <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
@@ -393,29 +626,20 @@ Everything Above
 
     </div>
 	</div>
-</div>
-
-
-<!-- DRINK SECTION END HERE-->
-<!-- 
-
-
-
-    <h2>Side Items </h2>
-    <!--
- <div class="item  col-xs-4 col-xs-4">
+	
+		<div class="col span_1_of_3">
+	<div class="item  col-xs-4 col-lg-4">
             <div class="thumbnail">
-                <img class="group list-group-image" src="https://www.dmagazine.com/wp-content/uploads/2016/08/cheesechutney_flickr-677x451.jpg" alt="" />
+                <img class="group list-group-image" src="https://images2.phoenixnewtimes.com/imager/u/original/6497316/5173000.0.jpg" alt="" />
                 <div class="caption">
                     <h4 class="group inner list-group-item-heading">
-                        Cheese Sticks</h4>
+                        Echo Coffee</h4>
                     <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                      </p>
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
                             <p class="lead">
-                                $21.000</p>
+                                $1.80</p>
                         </div>
                         <div class="col-xs-12 col-md-6">
                             <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
@@ -424,109 +648,145 @@ Everything Above
                 </div>
             </div>
         </div>
+
     </div>
+	</div>
+	
+		<div class="col span_1_of_3">
+	<div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://www.disgracesonthemenu.com/wp-content/uploads/2010/08/espresso_wp.jpg" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Espresso Coffee</h4>
+                    <p class="group inner list-group-item-text">
+                      </p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $1.80</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+	</div>-->
+	
 </div>
 
 
 
-<div class="container">
-    <div class="row">
+<!-- Sign up Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sign Up for Free</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form">
+      
+      <div class="tab-content">
+        <div id="signup">   
+          
+          
+          <form action="/" method="post">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
         
-<div class="item  col-xs-4 col-xs-4">
-            <div class="thumbnail">
-                <img class="img-responsive" class="group list-group-image" src="https://www.dmagazine.com/wp-content/uploads/2016/09/campisis-677x451.jpg" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Original Breadsticks</h4>
-                    <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                $21.000</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="field-wrap">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off"/>
             </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <button type="submit" class="button button-block">Get Started</button>
+          
+          </form>
+
         </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
+  </div>
 </div>
-<div class="item  col-xs-4 col-xs-4">
-            <div class="thumbnail">
-                <img class="img-responsive" class="group list-group-image" src="https://www.papajohns.com/static-assets/a/images/web/product/sides/garlic-knots-compressed.jpg" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Garlic Knots</h4>
-                    <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                $21.000</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
 </div>
 
-    </div>
-</div>
-<div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="https://easybaked.files.wordpress.com/2013/01/brownie-oreo-cookie-cup21.jpg" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Chocolate Chips Oreo Cups</h4>
-                    <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                $21.000</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- Login Modal- ->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Log In Now</h4>
+      </div>
+      <div class="modal-body">
+            <div id="login">   
+         
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          
+          <button class="button button-block">Log In</button>
+          
+          </form>
+
         </div>
-<div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="http://assets.marthastewart.com/styles/wmax-300/d26/mb_1001_strawberry_cupcake/mb_1001_strawberry_cupcake_vert.jpg?itok=D8M-5HSc" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Chocolate Chips Oreo Cups</h4>
-                    <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                $21.000</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
- 
-
-
--->
-
+        
+      </div><!-- tab-content -->
+      
+  </div>
+  </div>
+  </div>
 
   </body>

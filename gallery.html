@@ -17,21 +17,33 @@
   <script src="script.js"></script>
 </head>
 <body class= "gallery">
-  <div class="topnav">
-  <a href= "home.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="menu.html">Menu</a>
-  <a class="active" href="gallery.html">Gallery</a>
-  <a href="contact.html">Contact</a>
-</div>
   
+  <div class="navbar navbar-inverse">
+  <div class = "navbar-header">
+      <a class="navbar-brand-image"> <img class="logo" src="http://static1.squarespace.com/static/50230bbd84ae28a62a536a29/t/522e8eece4b048babe08ffde/1412192567146/?format=750w"></a>
+  </div>
+  <ul class="nav navbar-nav">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a class="active" href="">Gallery</a></li>
+    <li><a href="event.html">Event</a></li>
+    <li><a href="contact.html">Contact</a></li>
+      </ul>
+  <ul class="nav navbar-nav editUL">
+    <li class="left"><a data-toggle="modal" data-target="#myModal">Sign Up</a></li>
+    <li class="left"><a data-toggle="modal" data-target="#myModal2">Login</a></li>
+    </ul>
+  </div>
+</div>
+
   <header> <h1> Michael's Pizzeria</h1></header>
 
   
   <div class="container">
       
 
-  <p> "A slice a day keep the sad away." </p>
+  <p class="ptag"> "A slice a day keep the sad away." </p>
       
   <div id="carousel-example-generic" class="carousel slide" >
   
@@ -41,42 +53,67 @@
       <li data-target="#carousel-example-generic" data-slide-to="2"></li>
       <li data-target="#carousel-example-generic" data-slide-to="3"></li>
       <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="7"></li>
     </ol>
 
     <div class="carousel-inner">
-    
+  
       <div class="item active">
-        <img src="https://media.giphy.com/media/a3SwbHD5a0LJu/giphy.gif" alt="..." style= width:20px">
+        <img src="https://s-media-cache-ak0.pinimg.com/600x315/22/b5/c3/22b5c3b4a0b909259013e3fd650c67d7.jpg" alt="..." style:"width:100%">
+        <div class="carousel-caption">
+          <h1>I were hung-over after having Michael's pasta.</h1>
+        </div>
+      </div>
+      
+      <div class="item">
+        <img src="https://s-media-cache-ak0.pinimg.com/600x315/ae/fe/cc/aefecc4ac0baf70cc6d4434605577856.jpg" alt="..." style= "width:100%">
         <div class="carousel-caption">
           <h1>"I woke up to sing song and enjoy Michael pizza."</h1> 
         </div>
       </div>
   
       <div class="item">
-        <img src="http://2.bp.blogspot.com/-_1oNKL6tuGw/UadWj_W22ZI/AAAAAAACzMM/qyC2mH_GoJ4/s1600/ps.jpg" alt="..." style:width;50%">
-        <div class="carousel-caption">
-          <h1>I were hung-over after having Michael's pizza.</h1>
-        </div>
-      </div>
-  
-      <div class="item">
-        <img src="https://pbs.twimg.com/profile_images/766193854274007040/hg2obDaB.jpg"alt="... "style="width:50%" >
+        <img src="https://s-media-cache-ak0.pinimg.com/600x315/17/77/a6/1777a600f8cee0af7f5c71ab1a44f612.jpg"alt="... "style="width:100%" >
         <div class="carousel-caption">
           <h1>Love Micheal's Pizzeria</h1>
         </div>
       </div>
+      
+      <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJTJ6NSAb78e452j2wEvuGcF9g999hjHhjPwKmZWipRyYYwm5t" alt="..." style="width:100%">
+        <div class="carousel-caption">
+        <h1> Wwww!!! Best food ever.</h1>
+        </div>
+      </div>
+      
   
       <div class="item">
-        <img src="https://peopledotcom.files.wordpress.com/2016/10/giada.jpg?w=669" alt="..." style="width:50%">
+        <img src="https://s-media-cache-ak0.pinimg.com/600x315/e1/9e/00/e19e00d5cf6e9c0d3634551c5482f16f.jpg" alt="..." style="width:100%">
         <div class="carousel-caption">
-        <h1> Wwww!!! Best pan pizza ever.</h1>
+        <h1> Wwww!!! Best pizza ever.</h1>
         </div>
       </div>
       
        <div class="item">
-        <img src="https://s.yimg.com/uu/api/res/1.2/3M1c_yPY7UujLZEd8j5vcw--/aD01NTE7dz05ODA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/creatr-images/GLB/2017-01-22/f4be6550-e09b-11e6-90f1-776bca4b0b4b_Screen-Shot-2017-01-22-at-7-10-43-AM.png" alt="..." style=width:50%">
+        <img src="https://i.ytimg.com/vi/b_TN6GXmSH4/maxresdefault.jpg" alt="..." style="width:100%">
         <div class="carousel-caption">
-          <h1> No can know enough about how tastey Michael's pizza if you don't try it.</h1>
+        <h1> Life is combination of pizza and pasta.</h1>
+        </div>
+      </div>
+      
+      <div class="item">
+        <img src="http://www.rantfood.com/wp-content/uploads/2015/01/117168105.jpg" alt="..." style="width:100%">
+        <div class="carousel-caption">
+        <h1>It's never too cold for ice cream.</h1>
+        </div>
+      </div>
+      
+       <div class="item">
+        <img src="https://i0.wp.com/www.upshox.com/wp-content/uploads/2017/03/khloe-kardashian-khloe-kardashian-diet.jpg?resize=600%2C315&ssl=1" alt="..." style="width:100%">
+        <div class="carousel-caption">
+          <h1> No one can know enough about how tastey Michael's pizza if they don't try it.</h1>
         </div>
       </div>
  
@@ -94,7 +131,119 @@
     </a>
   </div>
   <br>
-  <p>Michael's Pizzeria makes the best pizza ever.</p>
+  <p class="ptag">Michael's Pizzeria makes the best pizza ever.</p>
 
 </div>
+
+
+
+
+
+<!-- Sign up Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sign Up for Free</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form">
+      
+      <div class="tab-content">
+        <div id="signup">   
+          
+          
+          <form action="/" method="post">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <button type="submit" class="button button-block">Get Started</button>
+          
+          </form>
+
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Login Modal- ->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Log In Now</h4>
+      </div>
+      <div class="modal-body">
+            <div id="login">   
+         
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          
+          <button class="button button-block">Log In</button>
+          
+          </form>
+
+        </div>
+        
+      </div><!-- tab-content -->
+      
+  </div>
+  </div>
+  </div>
   </body>

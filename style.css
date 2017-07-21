@@ -6,7 +6,7 @@ header {
 }
 
 
-.topnav {
+/*.topnav {
   overflow: visible;
   background-color: #333;
   height: 90px;
@@ -25,7 +25,7 @@ header {
 .topnav a:hover {
   background-color:white;
   color:Black;
-}
+
 
 .menu-dropdown {
   border: none;
@@ -37,17 +37,31 @@ header {
 .topnav a.active {
     background-color: #4CAF50;
     color: white;
-}
-.home {
+}*/
+/*.home {
   background:white;
   background-size:500px 400px;
   background-repeat:no-repeat;
   color:black;
   font-weight: bold;
+}*/
+
+/*CAROUSEL*/
+
+
+.navbar-nav li a {
+    font-size: 20px;
+    font-family: 'Italiana', serif;
+    font-weight: bold;
+    line-height: 60px;
+    height:60px;
+    vertical-align: middle;
 }
 
+
+
 img {
-  height:350px;
+ 
   width:100%;
   
 }
@@ -119,19 +133,31 @@ img {
     margin: 0 0 11px;
 }
 
-.button-block {
+/*.button-block {
     background-color: #80c332;
-}
+}*/
 
-.contact{
+.contact1{
     font-size: 20px;
 font-family: 'Italiana', serif;
     font-weight: bold;
+    color:#116019; 
+    margin-left:100px;
+    margin-top:50px;
 }
 
+.form-group{
+    font-size: 20px;
+font-family: 'Italiana', serif;
+    font-weight: bold;
+    color:#116019;
+}
 .ptag{
         font-size: 20px;
 font-family: 'Italiana', serif;
+ font-weight:bold;
+ color:#116019;
+ font-style: Italic;
 
 }
 
@@ -145,9 +171,82 @@ font-family: 'Italiana', serif;
 h1 {
    text-align: center; 
    font-weight:bold;
+    color: #8c0815;
 }
 
 .editUL{
     float: right;
 
 }
+.logo {
+    height:90px;
+    width:150px;
+}
+
+
+.project-tittle {
+     font-weight:bold;
+}
+
+p {
+   font-family: 'Italiana', serif;
+ font-weight:bold;
+ color:black;
+}
+
+h4 {
+     font-family: 'Italiana', serif;
+ font-weight:bold;
+}
+
+#pizza {
+    font-family: 'Italiana', serif;
+ font-weight:bold;
+  text-align: center; 
+   color: #8c0815;
+}
+
+.tittle {
+    font-family: 'Italiana', serif;
+ font-weight:bold;
+   color: #8c0815;
+}
+
+/*font size*/
+.carousel-caption > h1 {
+    color: #116019;
+    font-family: 'Italiana', serif;
+}
+
+.custom-img {
+    height:auto;
+}
+.container-fluid {
+    margin-bottom: 50px;
+}
+.btn-group{
+    text-align:center;
+}
+
+
+.hosttime {
+      color: #116019;
+    font-family: 'Italiana', serif;
+    font-size: 15px;
+}
+
+.Time {
+    font-family: 'Italiana', serif;
+    font-size: 30px;
+}
+
+body {
+    margin-bottom:50px;
+}
+
+.modal-dialog {
+     font-family: 'Italiana', serif;
+ font-weight:bold;
+}
+
+  

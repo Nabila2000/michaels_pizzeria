@@ -15,24 +15,30 @@
   
       <div class="navbar navbar-inverse">
   <div class = "navbar-header">
-      <a class="navbar-brand">SomeBrand</a>
+<a class="navbar-brand-image"> <img class="logo" src="http://static1.squarespace.com/static/50230bbd84ae28a62a536a29/t/522e8eece4b048babe08ffde/1412192567146/?format=750w"></a>
   </div>
   <ul class="nav navbar-nav">
     <li><a href="home.html">Home</a></li>
     <li><a class="active" href="">About</a></li>
     <li><a href="menu.html">Menu</a></li>
     <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="event.html">Event</a></li>
     <li><a href="contact.html">Contact</a></li>
-      <ul class="nav navbar-nav editUL">
-        <li class="left"><a href="contact.html">Sign Up</a></li>
-        <li class="left"><a href="contact.html">Login</a></li>
-      </ul>
+     
+    
+        </ul>
+  <ul class="nav navbar-nav editUL">
+    <li class="left"><a data-toggle="modal" data-target="#myModal">Sign Up</a></li>
+    <li class="left"><a data-toggle="modal" data-target="#myModal2">Login</a></li>
     </ul>
+    
+   
   </div>
 </div>
   <header>
     <h1> Michael's Pizzeria </h1>
   </header>
+   <br>
   <p class="ptag">Established in 1975 by Michael Pozzuoli, who is originally from Naples, Italy, the birthplace of pizza, Michael's Pizza is a "Greenwich Village institution" offereing the classic New York slice for over 37 years. First, we served our customers from our corner location at Bleecker and Carmine Street and now three doors down at 7 Carmine Street. At 75 years of age, Michael Pozzuoli still owns and operates the restaurant.</p>
   <p class="ptag">Michael's Pizza is a perennial top 10 listing in restaurant guides and publications such as Time Out New York and New York Magazine. NEW YORK MAGAZINE named Michael's Pizza "Best of New York" and in subsequent reviews referred to us as "the quintessentiall New York slice." In 2009 GQ Magazine listed Michael's Pizza as one the "Best 25 Pizzas on Earth." </p>
   
@@ -40,13 +46,145 @@
   <p class="ptag">After 38 years, Michael's is still an independently owned business at only one location, personally supervised by founder Michael himself. We still sre what we've always been: a classic NY slice joint. No glossy corporate backing, no fancy pants pien, no pretentious nonsense and go gimmcky budget pizza either. We are tried and true - the real deal.</p>
   </body>
   <header>
-    <h2 class="project-title"> <a href="">Michel pozzuoli</a></h2>
-    <h2 class="project-title"> <a href="">Logo</a></h2>
-    <h2 class="project-title"> <a href="">Michel's Pizza restaurant</a></h2>
-    <h2 class="project-title"> <a href=""> Michael family</a></h2>
+    
+    <div claass="container-fluid">
+  <div class="row">
+    <div class="col-xs-2">
+    </div>
+    
+     <div class="col-xs-4">
+       <img class="img-circle" src="https://scripted.org/wp-content/uploads/2014/08/DSC_5204-EA2-e1478054201716-985x1024.jpg">
+    </div>
+    
+     <div class="col-xs-4">
+       <br>
+        <br>
+         <br>
+          <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+       <h1>Michael Pizzeria is Michael's family!</h1>
+       <br>
+       <p></p>
+    </div>
+    
+     <div class="col-xs-2">
+    </div>
+    
+  </div>
+  <br><br>
     
     
+  
     
-    
-    
+    <!-- Sign up Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sign Up for Free</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form">
+      
+      <div class="tab-content">
+        <div id="signup">   
+          
+          
+          <form action="/" method="post">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <button type="submit" class="button button-block">Get Started</button>
+          
+          </form>
+
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Login Modal- ->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Log In Now</h4>
+      </div>
+      <div class="modal-body">
+            <div id="login">   
+         
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          
+          <button class="button button-block">Log In</button>
+          
+          </form>
+
+        </div>
+        
+      </div><!-- tab-content -->
+      
+  </div>
+  </div>
+  </div>
   </header>
